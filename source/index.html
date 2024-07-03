@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPERGYM</title>
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
-    <main>
-      <section class="hero" data-test="hero">
+<body class="page-body">
+  <main>
+    <section class="hero" data-test="hero">
+      <div class="hero__container container">
         <header class="hero__header header">
-          <!-- <picture>лого
-            <img class="header__logo">
-          </picture> -->
+          <div class="header__logo logo">
+            <!-- <picture>лого</picture> -->
+          </div>
           <a class="header__phone" href="tel.88005555555">8 800 555-55-55</a>
         </header>
         <div class="hero__intro">
@@ -26,19 +27,22 @@
           <div class="hero__main-content">
             <p class="hero__location">Омск</p>
             <h1 class="hero__title">фитнес центр<span class="visually-hidden">'Supergym'</span></h1>
-            <a class="hero__price-link" href="#price">Купить абонемент</a>
+            <a class="hero__link" href="#price">Купить абонемент</a>
           </div>
           <div class="hero__img hero__img--mobile">
             <!-- <picture>человек-мужик</picture> -->
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="about" data-test="about">
+    <section class="about" data-test="about">
+      <div class="about__container container">
         <div class="about__main-content">
           <h2 class="about__title">Тренажёрный зал</h2>
-          <b class="about__accente">Просторный зал площадью 900 кв/м</b>
-          <p class="about__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p class="about__accente">Просторный зал площадью <strong>900 кв/м</strong></p>
+          <p class="about__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела
+            и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
         </div>
         <div class="about__media">
           <div class="about__img">
@@ -47,12 +51,17 @@
           <div class="about__video">
             <!-- <picture>обложка видоса</picture> -->
             <button class="about__video-play" type="button">кнопка</button>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw?si=YlPaJaoGPCB7ScWZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw?si=YlPaJaoGPCB7ScWZ"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="price" id="price" data-test="price">
+    <section class="price" id="price" data-test="price">
+      <div class="price__container container">
         <h2 class="price__title">Абонементы</h2>
         <ul class="price__period-list">
           <li class="price__period-item">
@@ -69,70 +78,429 @@
           <li class="price__product-item product-card">
             <h3 class="product-card__title">С тренером</h3>
             <p class="product-card__description">12 занятий</p>
-            <div class="product-card__price">
+            <dl class="product-card__price">
               <dt class="visually-hidden">Стоимость абонемента:</dt>
               <dd class="product-card__price-cost">
                 <span class="product-card__price-value">5000</span>
                 <!-- <svg>рублик</svg> -->
               </dd>
-            </div>
+            </dl>
             <a class="product-card__link">Купить абонемент</a>
           </li>
           <li class="price__product-item product-card">
             <h3 class="product-card__title">Дневной</h3>
             <p class="product-card__description">с 8:00 до 17:00</p>
-            <div class="product-card__price">
+            <dl class="product-card__price">
               <dt class="visually-hidden">Стоимость абонемента:</dt>
               <dd class="product-card__price-cost">
                 <span class="product-card__price-value">1700</span>
                 <!-- <svg>рублик</svg> -->
               </dd>
-            </div>
+            </dl>
             <a class="product-card__link">Купить абонемент</a>
           </li>
           <li class="price__product-item product-card">
             <h3 class="product-card__title">Полный день</h3>
             <p class="product-card__description">с 8:00 до 22:00</p>
-            <div class="product-card__price">
+            <dl class="product-card__price">
               <dt class="visually-hidden">Стоимость абонемента:</dt>
               <dd class="product-card__price-cost">
                 <span class="product-card__price-value">2700</span>
                 <!-- <svg>рублик</svg> -->
               </dd>
-            </div>
+            </dl>
             <a class="product-card__link">Купить абонемент</a>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="games" data-test="games">
+      <div class="games__container container">
+        <div class="games__main-content">
+          <h2 class="games__title">super games</h2>
+          <dl class="games__timings timings-list">
+            <div class="timings-list__item">
+              <dt class="timings-list__item-name">Дата</dt>
+              <dd class="timings-list__item-value">7
+                <span class="timings-list__subvalue">Марта 2019</span>
+              </dd>
+            </div>
+            <div class="timings-list__item">
+              <dt class="timings-list__item-name">Время</dt>
+              <dd class="timings-list__item-value">12:00</dd>
+            </div>
+          </dl>
+          <p class="games__descroption">Ежегодные соревнования по CrossFit</p>
+          <a class="games__link" href="404.html">заполнить заявку</a>
+        </div>
+        <div class="games__img">
+          <!-- <picture>мужик в магнезии</picture> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="juri" data-test="juri">
+      <div class="juri__container container">
+        <h2 class="juri__title">Жюри</h2>
+        <ul class="juri__list">
+          <!-- 8 карточек в слайдер, стрелки -->
+          <li class="juri__item juri-card">
+            <img class="juri-card__photo" src="#" width="260" height="300" alt="">
+            <div class="juri-card__overlay">
+              <h3 class="juri-card__name">Анна Павлова</h3>
+              <p class="juri-card__specialization">CrossFit</p>
+              <ul class="juri-card__about-list">
+                <li class="juri-card__about-item">Certified Level 3 Trainer</li>
+                <li class="juri-card__about-item">Победитель чемпионата России по CrossFit </li>
+                <li class="juri-card__about-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="juri__item juri-card">
+            <img class="juri-card__photo" src="#" width="260" height="300" alt="">
+            <div class="juri-card__overlay">
+              <h3 class="juri-card__name">Алексей Лавров</h3>
+              <p class="juri-card__specialization">CrossFit</p>
+              <ul class="juri-card__about-list">
+                <li class="juri-card__about-item">Certified Level 3 Trainer</li>
+                <li class="juri-card__about-item">Победитель чемпионата России по CrossFit </li>
+                <li class="juri-card__about-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="juri__item juri-card">
+            <img class="juri-card__photo" src="#" width="260" height="300" alt="">
+            <div class="juri-card__overlay">
+              <h3 class="juri-card__name">Александр Пашков</h3>
+              <p class="juri-card__specialization">CrossFit</p>
+              <ul class="juri-card__about-list">
+                <li class="juri-card__about-item">Certified Level 3 Trainer</li>
+                <li class="juri-card__about-item">Победитель чемпионата России по CrossFit </li>
+                <li class="juri-card__about-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="juri__item juri-card">
+            <img class="juri-card__photo" src="#" width="260" height="300" alt="">
+            <div class="juri-card__overlay">
+              <h3 class="juri-card__name">Мария Кетова</h3>
+              <p class="juri-card__specialization">CrossFit</p>
+              <ul class="juri-card__about-list">
+                <li class="juri-card__about-item">Certified Level 3 Trainer</li>
+                <li class="juri-card__about-item">Победитель чемпионата России по CrossFit </li>
+                <li class="juri-card__about-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="features" data-test="features">
+      <div class="features__container container">
+        <h2 class="features__title">Наши преимущества</h2>
+        <ul class="features__list">
+
+          <li class="features__item feature">
+            <h3 class="feature__name">Площадь</h3>
+            <p class=" feature__accente">
+              <strong>900</strong>
+              <span>кв/м</span>
+            </p>
+            <p class="feature__describtion">Занимайтесь без очередей и толкучки</p>
+          </li>
+
+          <li class="features__item feature">
+            <h3 class="feature__name">Собственная парковка</h3>
+            <p class=" feature__accente">
+              <strong>70</strong>
+              <span>машин</span>
+            </p>
+            <p class="feature__describtion">Вы всегда найдёте место для своей машины на нашей парковке</p>
+          </li>
+
+          <li class="features__item feature feature--alt-colored">
+            <h3 class="visually-hidden">Оборудование</h3>
+            <p class=" feature__accente">
+              <strong>100</strong>
+              <span>Тренажёров</span>
+            </p>
+            <p class="feature__describtion">Современные тренажёры на все группы мышц</p>
+          </li>
+
+          <li class="features__item feature">
+            <h3 class="feature__name">Комфорт</h3>
+            <p class=" feature__accente">
+              <strong>350</strong>
+              <span>мест</span>
+            </p>
+            <p class="feature__describtion">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+          </li>
+
+          <li class="features__item feature">
+            <h3 class="feature__name">Тренерский опыт</h3>
+            <p class=" feature__accente">
+              <strong>5+</strong>
+              <span>лет</span>
+            </p>
+            <p class="feature__describtion">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="offers" data-test="offers">
+      <div class="offers__container container">
+        <h2 class="offers__title">Акции</h2>
+        <ul class="offers__list">
+
+          <li class="offers__item offer offer--main-offer">
+            <h3 class="offer__title">Год <span>4999</span></h3>
+            <p class="offer__description">Безлимитный абонемент в тренажёрный зал</p>
+            <a class="offer__link" href="404.html">подробнее</a>
+            <div class="offer__img">
+              <!-- <picture>мадама</picture> -->
+            </div>
+          </li>
+
+          <li class="offers__item offer">
+            <h3 class="offer__title">Месяц бесплатно</h3>
+            <p class="offer__description">Приведи друга, получи абонемент в подарок</p>
+            <a class="offer__link" href="404.html">подробнее</a>
+          </li>
+
+          <li class="offers__item offer offer--main-offer">
+            <h3 class="offer__title">Скидка 20%</h3>
+            <p class="offer__description">Корпоративный фитнес с командой</p>
+            <a class="offer__link" href="404.html">подробнее</a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="faq" data-test="faq">
+      <div class="faq__container container">
+        <h2 class="faq__title">Вопросы и ответы</h2>
+        <ul class="faq__themes-list">
+          <li class="faq__themes-item">
+            <button class="faq__theme-button faq__theme-button--is-active">Центр</button>
+          </li>
+          <li class="faq__themes-item">
+            <button class="faq__theme-button">Абонемент</button>
+          </li>
+          <li class="faq__themes-item">
+            <button class="faq__theme-button">Услуги</button>
+          </li>
+          <li class="faq__themes-item">
+            <button class="faq__theme-button">Правила</button>
+          </li>
+        </ul>
+
+        <ul class="faq__questions-list">
+
+          <li class="faq__questions-item question">
+            <details class="question__wrapper" open>
+              <summary class="question__content">
+                <span class="question__text">Как стать членом фитнес-центра?</span>
+                <button class="question__more-button" type="button"></button>
+              </summary>
+              <p class="question__answer">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+            </details>
+          </li>
+
+          <li class="faq__questions-item question">
+            <details class="question__wrapper">
+              <summary class="question__content">
+                <span class="question__text">Где можно посмотреть расписание?</span>
+                <button class="question__more-button" type="button"></button>
+              </summary>
+              <p class="question__answer">Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
+            </details>
+          </li>
+
+          <li class="faq__questions-item question">
+            <details class="question__wrapper">
+              <summary class="question__content">
+                <span class="question__text">Есть кулеры в центре? Предоставляются полотенца?</span>
+                <button class="question__more-button" type="button"></button>
+              </summary>
+              <p class="question__answer">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+            </details>
+          </li>
+
+          <li class="faq__questions-item question">
+            <details class="question__wrapper">
+              <summary class="question__content">
+                <span class="question__text">Сколько тренеров работает в клубе и какова их квалификация?</span>
+                <button class="question__more-button" type="button"></button>
+              </summary>
+              <p class="question__answer">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+            </details>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="reviews" data-test="reviews">
+      <div class="reviews__container container">
+        <h2 class="reviews__title">Отзывы</h2>
+        <!-- слайдер -->
+         <ul class="reviews__list">
+
+          <li class="reviews__item review">
+            <div class="review__photo">
+              <!-- <picture></picture> -->
+            </div>
+            <cite class="review__author">Анна Орлова</cite>
+            <blockquote class="review__text">
+              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </blockquote>
+          </li>
+
+          <li class="reviews__item review">
+            <div class="review__photo">
+              <!-- <picture></picture> -->
+            </div>
+            <cite class="review__author">Анна Орлова</cite>
+            <blockquote class="review__text">
+              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </blockquote>
+          </li>
+
+         </ul>
+      </div>
+    </section>
+
+    <div class="datatest-wrapper" data-test="form">
+      <section class="form">
+        <div class="form__container container">
+          <h2 class="form__title">Бесплатное занятие</h2>
+          <form class="form__fields" action="https://echo.htmlacademy.ru/" method="post">
+            <ul class="form__list">
+
+              <li class="form__item form-field">
+                <label class="form-field__name" for="client-name">Имя</label>
+                <input class="form-field__inp" type="text" id="client-name" name="client-name">
+                <p class="form-field__error"></p>
+              </li>
+
+              <li class="form__item form-field">
+                <label class="form-field__name" for="client-phone">Телефон</label>
+                <input class="form-field__inp" type="tel" id="client-phone" name="client-phone">
+                <p class="form-field__error"></p>
+              </li>
+
+            </ul>
+          </form>
+        </div>
       </section>
 
-      <section class="games" data-test="games">games</section>
+      <section class="contacts">
+        <div class="contacts__container container">
+          <h2 class="contacts__title">Контакты</h2>
+          <dl class="contacts__list">
 
-      <section class="juri" data-test="juri">juri</section>
+            <div class="contacts__item contact">
+              <dt class="contact__name">Адрес:</dt>
+              <dd class="contact__value">г. Омск, ул. 60 лет Октября, 7</dd>
+            </div>
 
-      <section class="features" data-test="features">features</section>
+            <div class="contacts__item contact">
+              <dt class="contact__name">График работы:</dt>
+              <dd class="contact__value">Пн-Вс: с 8:00 до 22:00</dd>
+            </div>
 
-      <section class="offers" data-test="offers">offers</section>
+            <div class="contacts__item contact">
+              <dt class="contact__name">Телефон:</dt>
+              <dd class="contact__value">
+                <a class="contact__link" href="tel:88005555555">8 800 555-55-55</a>
+              </dd>
+            </div>
 
-      <section class="faq" data-test="faq">faq</section>
+            <div class="contacts__item contact">
+              <dt class="contact__name">Email:</dt>
+              <dd class="contact__value">
+                <a class="contact__link" href="mail-to:oмск@supergym.ru">oмск@supergym.ru</a>
+              </dd>
+            </div>
 
-      <section class="reviews" data-test="reviews">reviews</section>
+          </dl>
+        </div>
+      </section>
+    </div>
+  </main>
 
-      <div class="datatest-wrapper" data-test="form">
-        <section class="form"></section>
+  <footer class="page-footer" data-test="footer">
+    <div class="footer__logo logo">
+      <!-- <picture>лого</picture> -->
+    </div>
+    <nav class="footer__nav main-nav">
+      <ul class="main-nav__list">
 
-        <section class="contacts"></section>
-      </div>
-    </main>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="404.html">Услуги</a>
+        </li>
 
-    <footer class="page-footer" data-test="footer">footer</footer>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="404.html">Абонементы</a>
+        </li>
 
-    <script type="module" src="js/main.js"></script>
-  </body>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="404.html">Акции</a>
+        </li>
 
-  </html>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="404.html">Тренеры</a>
+        </li>
 
-  <!-- пример использования спрайта -->
-  <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="404.html">Расписание</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <ul class="footer__social-list">
+
+      <li class="footer__social-item social">
+        <a class="social__link" href="404.html">
+          <span class="visually-hidden">supergym в 'VK'.</span>
+          <!-- иконка -->
+        </a>
+      </li>
+
+      <li class="footer__social-item social">
+        <a class="social__link" href="404.html">
+          <span class="visually-hidden">supergym в 'Одноклассники'.</span>
+          <!-- иконка -->
+        </a>
+      </li>
+
+      <li class="footer__social-item social">
+        <a class="social__link" href="404.html">
+          <span class="visually-hidden">supergym на 'Reddit'.</span>
+          <!-- иконка -->
+        </a>
+      </li>
+
+    </ul>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
+
+<!-- пример использования спрайта -->
+<!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
   <svg>
     <use href="/__spritemap#sprite-user"></use>
   </svg> -->
