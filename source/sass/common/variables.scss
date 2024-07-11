@@ -1,0 +1,41 @@
+// VIEWPORTS
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1366px;
+
+// FONTS
+$primary-font: "Alumni Sans", "Arial", sans-serif;
+$secondary-font: "Roboto Condensed", "Arial", sans-serif;
+
+// COLORS
+$base-dark-color: #102654;
+$base-light-color: #FFFFFF;
+// text
+$dark-text-color: $base-dark-color;
+$light-text-color: $base-light-color;
+$accente-text-color: #103AAE;
+$gradient-text-color: linear-gradient(128deg, #D10A42 0%, #0041CA 50%);
+
+// buttons
+$border-button-light: $base-light-color;
+$border-button-dark: $base-dark-color;
+$border-subbutton: #1C3374;
+$bg-button: linear-gradient(149deg, #D10A42 0%, #00359F 100%);
+$accente-tabs: #D10A42;
+
+// backgrounds
+$base-light-bg: $base-light-color;
+$second-light-bg: #F8F9FC;
+$base-dark-bg: $base-dark-color;
+$second-dark-bg: #1C3374;
+$hero-bg: linear-gradient(90deg, #1C3477 0%, #1A3578 39%, #73184B 76%, #B4022A 100%);
+$banners-bg: #ED0233;
+$footer-bg: #030A1A;
+
+// icons
+$light-icon-color: $base-light-color;
+$dark-icon-color: $base-dark-color;
+
+// form
+$base-form-color: $base-light-color;
+$error-form-color: #FF121F;
