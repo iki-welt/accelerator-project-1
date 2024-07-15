@@ -8,11 +8,11 @@
   }
 }
 
-@mixin font-set($font-size, $line-height, $font-weight) {
+@mixin font-set($font-size, $line-height, $font-weight, $font-style: normal) {
   font-size: $font-size;
   line-height: $line-height;
   font-weight: $font-weight;
-  font-style: normal;
+  font-style: $font-style;
 }
 
 @mixin list-default {

@@ -2,12 +2,39 @@
 // .hero__container {}
 // .hero__header {}
 // .hero__intro {}
-// .hero__classes {}
+.hero__classes {
+  @include font-set(14px, 20px, 400);
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
+}
 // .hero__classes-item {}
 // .hero__main-content {}
 // .hero__location {}
-// .hero__title {}
-// .hero__link {}
+.hero__title {
+  font-family: $heading-font;
+  text-transform: uppercase;
+  letter-spacing: 1%;
+  @include font-set (62px, 62px, 800);
+
+  @media (min-width: $tablet-width) {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 2%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 92px;
+    line-height: 110px;
+    letter-spacing: 4%;
+  }
+}
+
+.hero__link {
+  @include link-default;
+  @include font-set(12px, 12px, 700);
+}
 // .hero__img {
 //   --mobile {}
 // }

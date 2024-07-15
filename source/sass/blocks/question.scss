@@ -1,6 +1,25 @@
 // .question {}
 // .question__wrapper {}
-// .question__content {}
+.question__content {
+  @include font-set(20px, 20px, 400);
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
 // .question__text {}
 // .question__more-button {}
-// .question__answer {}
+.question__answer {
+  @include font-set(16px, 20px, 300);
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

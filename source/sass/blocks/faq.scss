@@ -1,7 +1,14 @@
 // .faq {}
 // .faq__container {}
 // .faq__title {}
-// .faq__themes-list {}
+.faq__themes-list {
+  @include font-set(16px, 16px, 400);
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
 // .faq__themes-item {}
 // .faq__theme-button {
 //   --is-active {}

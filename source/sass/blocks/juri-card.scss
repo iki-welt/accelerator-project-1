@@ -3,5 +3,11 @@
 // .juri-card__overlay {}
 // .juri-card__name {}
 // .juri-card__specialization {}
-// .juri-card__about-list {}
+.juri-card__about-list {
+  @include font-set(14px, 20px, 400);
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
+}
 // .juri-card__about-item {}

@@ -1,8 +1,25 @@
 // .games {}
 // .games__containe {}
 // .games__main-content {}
-// .games__title {}
+.games__title {
+  font-size: 48px;
+  line-height: 54px;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-size: 82px;
+    line-height: 96px;
+  }
+}
+
 // .games__timings {}
-// .games__descroption {}
+.games__description {
+  @include font-set(16px, 20px, 300);
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
 // .games__link {}
 // .games__img {}

@@ -1,0 +1,12 @@
+.primary-subtitle {
+  @include font-set(18px, 20px, 400);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}

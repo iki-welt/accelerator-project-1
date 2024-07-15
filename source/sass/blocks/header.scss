@@ -1,3 +1,16 @@
 // .header {}
 // .header__logo {}
-// .header__phone {}
+.header__phone {
+  @include link-default;
+  @include font-set(22px, 22px, 700);
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}

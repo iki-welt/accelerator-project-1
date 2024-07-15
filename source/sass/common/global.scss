@@ -11,19 +11,17 @@ body {
   padding: 0;
   grid-template-rows: auto 1fr auto;
 
-  // color: $base-black;
-  // font-family: $primary-font;
-  // font-weight: 400;
-  // font-style: normal;
-  // font-size: 14px;
-  // line-height: 20px;
+  color: $dark-text-color;
+  font-family: $primary-font;
 
-  // background-color: $lightest-bg;
+  background-color: $base-light-bg;
 
-  // @media (min-width: $tablet-width) {
-  //   font-size: 16px;
-  //   line-height: 24px;
-  // }
+  @include font-set(14px, 22px, 300);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 img {

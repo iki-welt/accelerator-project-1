@@ -1,7 +1,19 @@
 // .price {}
 // .price__container {}
 // .price__title {}
-// .price__period-list {}
+.price__period-list {
+  @include font-set(16px, 16px, 400);
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
 // .price__period-item {}
 // .price__period-tab {}
 // .price__product-list {}

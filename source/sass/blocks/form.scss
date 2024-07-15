@@ -4,3 +4,6 @@
 // .form__fields {}
 // .form__list {}
 // .form__item {}
+.form__submit {
+  @include font-set(12px, 12px, 700);
+}

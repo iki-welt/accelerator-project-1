@@ -1,7 +1,41 @@
-// .offer {
-//   --main-offer {}
-// }
-// .offer__title {}
+.offer--main-offer {
+  h3 span {
+    @include font-set(64px, 64px, 700);
+
+    @media (min-width: $tablet-width) {
+      font-size: 70px;
+      line-height: 70px;
+    }
+  }
+
+  p {
+    @include font-set(16px, 20px, 300);
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+
+.offer__title {
+  @include font-set(22px, 22px, 700);
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
 // .offer__description {}
-// .offer__link {}
+.offer__link {
+  @include link-default;
+  @include font-set(14px, 14px, 700);
+}
+
 // .offer__img {}
