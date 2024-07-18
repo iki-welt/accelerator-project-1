@@ -1,4 +1,14 @@
+.offer {
+  border-width: 7px;
+  border-style: solid;
+  border-image: $buttons-bg 1;
+}
+
 .offer--main-offer {
+  color: $light-text-color;
+  background-color: $banners-bg;
+  border: none;
+
   h3 span {
     @include font-set(64px, 64px, 700);
 
@@ -34,6 +44,8 @@
 
 // .offer__description {}
 .offer__link {
+  text-transform: uppercase;
+
   @include link-default;
   @include font-set(14px, 14px, 700);
 }

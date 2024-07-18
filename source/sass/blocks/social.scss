@@ -1,2 +1,9 @@
 // .social {}
-// .social__link {}
+
+.social__link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: $base-light-bg;
+  border-radius: 50%;
+}

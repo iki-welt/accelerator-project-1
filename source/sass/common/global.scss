@@ -14,7 +14,7 @@ body {
   color: $dark-text-color;
   font-family: $primary-font;
 
-  background-color: $base-light-bg;
+  background-color: $primary-bg;
 
   @include font-set(14px, 22px, 300);
 

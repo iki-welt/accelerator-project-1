@@ -15,6 +15,19 @@
   }
 }
 // .price__period-item {}
-// .price__period-tab {}
+.price__period-tab {
+  padding: 0 0 10px 0;
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  opacity: 0.5;
+
+  &--is-active {
+    border-bottom: 2px solid $accent-tabs;
+    opacity: 1;
+  }
+}
+
 // .price__product-list {}
 // .price__product-item {}

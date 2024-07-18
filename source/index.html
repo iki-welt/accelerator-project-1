@@ -14,7 +14,12 @@
       <div class="hero__container container">
         <header class="hero__header header">
           <div class="header__logo logo">
-            <!-- <picture>лого</picture> -->
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1366px)" srcset="/__spritemap#sprite-logo-view" width="130" height="26">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-logo-view" width="110" height="22">
+              <img class="logo__img" src="/__spritemap#sprite-logo-view" width="100" height="20"
+              alt="Логотип 'supergym'.">
+            </picture>
           </div>
           <a class="header__phone" href="tel.88005555555">8 800 555-55-55</a>
         </header>
@@ -30,7 +35,16 @@
             <a class="hero__link" href="#price">Купить абонемент</a>
           </div>
           <div class="hero__img hero__img--mobile">
-            <!-- <picture>человек-мужик</picture> -->
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)"
+                srcset="img/hero-img-pc-x1.webp 1x, img/hero-img-pc-x2.webp 2x" width="500" height="524">
+              <source type="image/webp" srcset="img/hero-img-tablet-x1.webp 1x, img/hero-img-tablet-x2.webp 2x"
+              width="324" height="390">
+              <source type="image/jpeg" media="(min-width: 1366px)"
+                srcset="img/hero-img-pc-x1.jpg 1x, img/hero-img-pc-x2.jpg 2x" width="500" height="524">
+              <img src="img/hero-img-tablet-x1.jpg" srcset="img/hero-img-tablet-x2.jpg 2x" width="324"
+                height="390" alt="Клиент 'supergym'.">
+            </picture>
           </div>
         </div>
       </div>
@@ -44,17 +58,39 @@
 
           <!-- БЕЗ КЛАССА по каскаду - начало -->
           <p class="about__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела
-            и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+            и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.<br>
+            <span class="about__extra-text">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</span>
+          </p>
           <!-- БЕЗ КЛАССА по каскаду - конец -->
 
         </div>
         <div class="about__media">
           <div class="about__img">
-            <!-- <picture>зал</picture> -->
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/gym-img-pc-x1.webp 1x, img/gym-img-pc-x2.webp 2x" width="660" height="400">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-img-tablet-x1.webp 1x, img/gym-img-tablet-x2.webp 2x" width="678" height="345">
+              <source type="image/webp" srcset="img/gym-img-mobile-x1.webp 1x, img/gym-img-mobile-x2.webp 2x" width="320" height="280">
+              <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/gym-img-pc-x1.jpg 1x, img/gym-img-pc-x2.jpg 2x" width="660" height="400">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gym-img-tablet-x1.jpg 1x, img/gym-img-tablet-x2.jpg 2x" width="678" height="345">
+              <img src="img/gym-img-mobile-x1.jpg" srcset="img/gym-img-mobile-x2.jpg 2x" width="320" height="280" alt="Тренажёрный зал 'supergym'.">
+            </picture>
           </div>
           <div class="about__video">
-            <!-- <picture>обложка видоса</picture> -->
-            <button class="about__video-play" type="button">кнопка</button>
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/preview-video-pc-x1.webp 1x, img/preview-video-pc-x2.webp 2x" width="360" height="230">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/preview-video-tablet-x1.webp 1x, img/preview-video-tablet-x2.webp 2x" width="270" height="170">
+              <source type="image/webp" srcset="img/preview-video-mobile-x1.webp 1x, img/preview-video-mobile-x2.webp 2x" width="320" height="170">
+              <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/preview-video-pc-x1.jpg 1x, img/preview-video-pc-x2.jpg 2x" width="360" height="230">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/preview-video-tablet-x1.jpg 1x, img/preview-video-tablet-x2.jpg 2x" width="270" height="170">
+              <img src="img/preview-video-mobile-x1.jpg" srcset="img/preview-video-mobile-x2.jpg 2x" width="320" height="170" alt="Видеообзор тренажёрного зала 'supergym'.">
+            </picture>
+            <button class="about__video-play" type="button">
+              <picture>
+                <source type="image/svg+xml" media="(min-width: 1366px)" srcset="/__spritemap#sprite-player-button-view" width="100" height="100">
+                <img class="logo__img" src="/__spritemap#sprite-player-button-view" width="72" height="72"
+                alt="Запустить видео.">
+              </picture>
+            </button>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw?si=YlPaJaoGPCB7ScWZ"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -69,7 +105,7 @@
         <h2 class="price__title primary-title">Абонементы</h2>
         <ul class="price__period-list">
           <li class="price__period-item">
-            <button class="price__period-tab">1 месяц</button>
+            <button class="price__period-tab price__period-tab--is-active">1 месяц</button>
           </li>
           <li class="price__period-item">
             <button class="price__period-tab">6 месяцев</button>
@@ -85,8 +121,8 @@
             <dl class="product-card__price">
               <dt class="visually-hidden">Стоимость абонемента:</dt>
               <dd class="product-card__price-cost">
-                <span class="product-card__price-value">5000</span>
-                <!-- <svg>рублик</svg> -->
+                <span class="product-card__price-value" data-value="5000">5000</span>
+                <span class="visually-hidden">рублей</span>
               </dd>
             </dl>
             <a class="product-card__link" href="404.html">Купить абонемент</a>
@@ -97,8 +133,8 @@
             <dl class="product-card__price">
               <dt class="visually-hidden">Стоимость абонемента:</dt>
               <dd class="product-card__price-cost">
-                <span class="product-card__price-value">1700</span>
-                <!-- <svg>рублик</svg> -->
+                <span class="product-card__price-value" data-value="1700">1700</span>
+                <span class="visually-hidden">рублей</span>
               </dd>
             </dl>
             <a class="product-card__link" href="404.html">Купить абонемент</a>
@@ -109,8 +145,8 @@
             <dl class="product-card__price">
               <dt class="visually-hidden">Стоимость абонемента:</dt>
               <dd class="product-card__price-cost">
-                <span class="product-card__price-value">2700</span>
-                <!-- <svg>рублик</svg> -->
+                <span class="product-card__price-value" data-value="2700">2700</span>
+                <span class="visually-hidden">рублей</span>
               </dd>
             </dl>
             <a class="product-card__link" href="404.html">Купить абонемент</a>
@@ -139,7 +175,14 @@
           <a class="games__link" href="404.html">заполнить заявку</a>
         </div>
         <div class="games__img">
-          <!-- <picture>мужик в магнезии</picture> -->
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)" srcset="img/games-img-pc-x1.webp 1x, img/games-img-pc-x2.webp 2x" width="660" height="500">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/games-img-tablet-x1.webp 1x, img/games-img-tablet-x2.webp 2x" width="378" height="348">
+            <source type="image/webp" srcset="img/games-img-mobile-x1.webp 1x, img/games-img-mobile-x2.webp 2x" width="290" height="290">
+            <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/games-img-pc-x1.jpg 1x, img/games-img-pc-x2.jpg 2x" width="660" height="500">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="img/games-img-tablet-x1.jpg 1x, img/games-img-tablet-x2.jpg 2x" width="378" height="348">
+            <img src="img/games-img-mobile-x1.jpg" srcset="img/games-img-mobile-x2.jpg 2x" width="290" height="290" alt="'super games' в 'supergym'.">
+          </picture>
         </div>
       </div>
     </section>
@@ -150,7 +193,10 @@
         <ul class="juri__list">
           <!-- 8 карточек в слайдер, стрелки -->
           <li class="juri__item juri-card">
-            <img class="juri-card__photo" src="#" width="260" height="300" alt="">
+            <picture>
+              <source type="image/webp" srcset="img/juri-1-x1.webp 1x, img/juri-1-x2.webp 2x" width="260" height="300">
+              <img src="img/juri-1-x1.jpg" srcset="img/juri-1-x2.jpg 2x" width="260" height="300" alt="">
+            </picture>
             <div class="juri-card__overlay">
               <h3 class="juri-card__name primary-subtitle">Анна Павлова</h3>
               <p class="juri-card__specialization">CrossFit</p>
@@ -163,7 +209,10 @@
           </li>
 
           <li class="juri__item juri-card">
-            <img class="juri-card__photo" src="#" width="260" height="300" alt="">
+            <picture>
+              <source type="image/webp" srcset="img/juri-2-x1.webp 1x, img/juri-2-x2.webp 2x" width="260" height="300">
+              <img src="img/juri-2-x1.jpg" srcset="img/juri-2-x2.jpg 2x" width="260" height="300" alt="">
+            </picture>
             <div class="juri-card__overlay">
               <h3 class="juri-card__name primary-subtitle">Алексей Лавров</h3>
               <p class="juri-card__specialization">CrossFit</p>
@@ -176,7 +225,10 @@
           </li>
 
           <li class="juri__item juri-card">
-            <img class="juri-card__photo" src="#" width="260" height="300" alt="">
+            <picture>
+              <source type="image/webp" srcset="img/juri-3-x1.webp 1x, img/juri-3-x2.webp 2x" width="260" height="300">
+              <img src="img/juri-3-x1.jpg" srcset="img/juri-3-x2.jpg 2x" width="260" height="300" alt="">
+            </picture>
             <div class="juri-card__overlay">
               <h3 class="juri-card__name primary-subtitle">Александр Пашков</h3>
               <p class="juri-card__specialization">CrossFit</p>
@@ -189,7 +241,10 @@
           </li>
 
           <li class="juri__item juri-card">
-            <img class="juri-card__photo" src="#" width="260" height="300" alt="">
+            <picture>
+              <source type="image/webp" srcset="img/juri-4-x1.webp 1x, img/juri-4-x2.webp 2x" width="260" height="300">
+              <img src="img/juri-4-x1.jpg" srcset="img/juri-4-x2.jpg 2x" width="260" height="300" alt="">
+            </picture>
             <div class="juri-card__overlay">
               <h3 class="juri-card__name primary-subtitle">Мария Кетова</h3>
               <p class="juri-card__specialization">CrossFit</p>
@@ -281,7 +336,14 @@
             <!-- БЕЗ КЛАССА по каскаду - конец -->
             <a class="offer__link" href="404.html">подробнее</a>
             <div class="offer__img">
-              <!-- <picture>мадама</picture> -->
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)" srcset="img/offer-pc-x1.webp 1x, img/offer-pc-x2.webp 2x" width="280" height="460">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/offer-tablet-x1.webp 1x, img/offer-tablet-x2.webp 2x" width="400" height="462">
+                <source type="image/webp" srcset="img/offer-mobile-x1.webp 1x, img/offer-mobile-x2.webp 2x" width="320" height="170">
+                <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/offer-pc-x1.jpg 1x, img/offer-pc-x2.jpg 2x" width="280" height="460">
+                <source type="image/jpeg" media="(min-width: 768px)" srcset="img/offer-tablet-x1.jpg 1x, img/offer-tablet-x2.jpg 2x" width="400" height="462">
+                <img src="img/offer-mobile-x1.jpg" srcset="img/offer-mobile-x2.jpg 2x" width="320" height="170" alt="Клиент 'supergym'.">
+              </picture>
             </div>
           </li>
 
@@ -293,7 +355,7 @@
             <a class="offer__link" href="404.html">подробнее</a>
           </li>
 
-          <li class="offers__item offer offer--main-offer">
+          <li class="offers__item offer">
             <!-- БЕЗ КЛАССА по каскаду - начало -->
             <h3 class="offer__title">Скидка 20%</h3>
             <p class="offer__description">Корпоративный фитнес с командой</p>
@@ -394,7 +456,12 @@
           <li class="reviews__item review">
             <!-- БЕЗ КЛАССА по каскаду - начало -->
             <div class="review__photo">
-              <!-- <picture></picture> -->
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/review-img-l-x1.webp 1x, img/review-img-l-x2.webp 2x" width="80" height="80">
+                <source type="image/webp" srcset="img/review-img-s-x1.webp 1x, img/review-img-s-x2.webp 2x" width="68" height="68">
+                <source type="image/jpeg" media="(min-width: 768px)" srcset="img/review-img-l-x1.jpg 1x, img/review-img-l-x2.jpg 2x" width="80" height="80">
+                <img src="img/review-img-s-x1.jpg" srcset="img/review-img-s-x2.jpg 2x" width="68" height="68" alt="">
+              </picture>
             </div>
             <cite class="review__author primary-subtitle">Анна Орлова</cite>
             <blockquote class="review__text">
@@ -406,7 +473,12 @@
           <li class="reviews__item review">
             <!-- БЕЗ КЛАССА по каскаду - начало -->
             <div class="review__photo">
-              <!-- <picture></picture> -->
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/review-img-l-x1.webp 1x, img/review-img-l-x2.webp 2x" width="80" height="80">
+                <source type="image/webp" srcset="img/review-img-s-x1.webp 1x, img/review-img-s-x2.webp 2x" width="68" height="68">
+                <source type="image/jpeg" media="(min-width: 768px)" srcset="img/review-img-l-x1.jpg 1x, img/review-img-l-x2.jpg 2x" width="80" height="80">
+                <img src="img/review-img-s-x1.jpg" srcset="img/review-img-s-x2.jpg 2x" width="68" height="68" alt="">
+              </picture>
             </div>
             <cite class="review__author primary-subtitle">Анна Орлова</cite>
             <blockquote class="review__text">
@@ -481,7 +553,12 @@
 
   <footer class="page-footer" data-test="footer">
     <div class="page-footer__logo logo">
-      <!-- <picture>лого</picture> -->
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="/__spritemap#sprite-logo-view" width="130" height="26">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-logo-view" width="110" height="22">
+        <img class="logo__img" src="/__spritemap#sprite-logo-view" width="100" height="20"
+        alt="Логотип 'supergym'.">
+      </picture>
     </div>
     <nav class="page-footer__nav main-nav">
       <ul class="main-nav__list">
@@ -514,21 +591,27 @@
       <li class="page-footer__social-item social">
         <a class="social__link" href="404.html">
           <span class="visually-hidden">supergym в 'VK'.</span>
-          <!-- иконка -->
+          <svg width="12" height="7">
+            <use href="/__spritemap#sprite-vk"></use>
+          </svg>
         </a>
       </li>
 
       <li class="page-footer__social-item social">
         <a class="social__link" href="404.html">
           <span class="visually-hidden">supergym в 'Одноклассники'.</span>
-          <!-- иконка -->
+          <svg width="9" height="16">
+            <use href="/__spritemap#sprite-ok"></use>
+          </svg>
         </a>
       </li>
 
       <li class="page-footer__social-item social">
         <a class="social__link" href="404.html">
           <span class="visually-hidden">supergym на 'Reddit'.</span>
-          <!-- иконка -->
+          <svg width="14" height="14">
+            <use href="/__spritemap#sprite-reddit"></use>
+          </svg>
         </a>
       </li>
 
@@ -545,3 +628,22 @@
   <svg>
     <use href="/__spritemap#sprite-user"></use>
   </svg> -->
+
+<!-- ретина растр-->
+  <!--
+<picture>
+  <source type="image/webp" media="(min-width: 1366px)" srcset="img/hero-img-pc-x1.webp 1x, img/hero-img-pc-x2.webp 2x" width="500" height="524">
+  <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-img-pc-x1.webp 1x, img/hero-img-pc-x2.webp 2x" width="500" height="524">
+  <source type="image/webp" srcset="img/hero-img-tablet-x1.webp 1x, img/hero-img-tablet-x2.webp 2x" width="324" height="390">
+  <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/hero-img-pc-x1.jpg 1x, img/hero-img-pc-x2.jpg 2x" width="500" height="524">
+  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/hero-img-pc-x1.jpg 1x, img/hero-img-pc-x2.jpg 2x" width="500" height="524">
+  <img src="img/hero-img-tablet-x1.jpg" srcset="img/hero-img-tablet-x2.jpg 2x" width="324" height="390" alt="Тренажёрный зал 'supergym'.">
+</picture> -->
+
+<!-- ретина вектор -->
+<!-- <picture>
+  <source type="image/svg+xml" media="(min-width: 1366px)" srcset="/__spritemap#sprite-logo" width="130" height="26">
+  <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-logo" width="110" height="22">
+  <img class="logo__img" src="/__spritemap#sprite-logo" width="100" height="20"
+  alt="Логотип 'supergym'.">
+</picture> -->

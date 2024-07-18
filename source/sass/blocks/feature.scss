@@ -1,6 +1,10 @@
 // .feature__name {}
 .feature__accent {
   strong {
+    background: $gradient-text-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     @include font-set(64px, 64px, 700);
 
     @media (min-width: $tablet-width) {
@@ -10,6 +14,7 @@
   }
 
   span {
+    color: $sub-accent-text-color;
     @include font-set(14px, 20px, 400);
 
     @media (min-width: $tablet-width) {
@@ -21,7 +26,18 @@
 // .feature__describtion {}
 
 .feature--alt-colored {
+  background-color: $base-dark-bg;
+  color: $light-text-color;
+
+  p strong {
+    color: inherit;
+    background: none;
+    -webkit-text-fill-color: unset;
+  }
+
   p span {
+    color: inherit;
+
     @include font-set(22px, 22px, 700);
 
     @media (min-width: $tablet-width) {

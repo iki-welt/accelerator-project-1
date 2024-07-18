@@ -1,9 +1,18 @@
-// .form {}
+.form {
+  color: $light-text-color;
+  background-color: $base-dark-bg;
+}
+
 // .form__container {}
 // .form__title {}
 // .form__fields {}
 // .form__list {}
 // .form__item {}
+
 .form__submit {
+  color: inherit;
+  background-color: transparent;
+  border: 2px solid $border-button-light;
+
   @include font-set(12px, 12px, 700);
 }

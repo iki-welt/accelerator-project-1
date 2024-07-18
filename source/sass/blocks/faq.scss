@@ -10,8 +10,15 @@
   }
 }
 // .faq__themes-item {}
-// .faq__theme-button {
-//   --is-active {}
-// }
+.faq__theme-button {
+  background-color: transparent;
+  border: 1px solid $border-button-dark;
+
+  &--is-active {
+    color: $light-text-color;
+    background-image: $buttons-bg;
+    border-image: $buttons-bg 1;
+  }
+}
 // .faq__questions-list {}
 // .faq__questions-item {}

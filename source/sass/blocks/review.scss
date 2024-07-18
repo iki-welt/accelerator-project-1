@@ -1,4 +1,11 @@
-// .review {}
-// .review__photo {}
+.review {
+  color: $light-text-color;
+  background-color: $second-dark-bg;
+}
+
+.review__photo {
+  border-radius: 50%;
+}
+
 // .review__author {}
 // .review__text {}

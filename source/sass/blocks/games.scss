@@ -1,6 +1,13 @@
-// .games {}
+.games {
+  background-color: $base-light-bg;
+}
+
 // .games__containe {}
-// .games__main-content {}
+.games__main-content {
+  color: $light-text-color;
+  background-color: $banners-bg;
+}
+
 .games__title {
   font-size: 48px;
   line-height: 54px;

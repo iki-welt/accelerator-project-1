@@ -9,28 +9,31 @@ $primary-font: "Roboto Condensed", "Arial", sans-serif;
 
 // COLORS
 $base-dark-color: #102654;
-$base-light-color: #FFFFFF;
+$base-light-color: #ffffff;
 // text
 $dark-text-color: $base-dark-color;
 $light-text-color: $base-light-color;
-$accente-text-color: #103AAE;
-$gradient-text-color: linear-gradient(128deg, #D10A42 0%, #0041CA 50%);
+$accent-text-color: #103aae;
+$shadow-text-color: #e8e8e8;
+$gradient-text-color: linear-gradient(128deg, #d10a42 0%, #0041ca 50%);
+$sub-accent-text-color: #2e35ac;
 
 // buttons
 $border-button-light: $base-light-color;
 $border-button-dark: $base-dark-color;
-$border-subbutton: #1C3374;
-$bg-button: linear-gradient(149deg, #D10A42 0%, #00359F 100%);
-$accente-tabs: #D10A42;
+$border-button-second-dark: #1c3374;
+$buttons-bg: linear-gradient(149deg, #d10a42 0%, #00359f 100%);
+$accent-tabs: #d10a42;
 
 // backgrounds
+$primary-bg: #f8f9fc;
 $base-light-bg: $base-light-color;
-$second-light-bg: #F8F9FC;
 $base-dark-bg: $base-dark-color;
-$second-dark-bg: #1C3374;
-$hero-bg: linear-gradient(90deg, #1C3477 0%, #1A3578 39%, #73184B 76%, #B4022A 100%);
-$banners-bg: #ED0233;
-$footer-bg: #030A1A;
+$second-dark-bg: #1c3374;
+$hero-bg: linear-gradient(90deg, #1c3477 0%, #1a3578 39%, #73184b 76%, #b4022a 100%);
+$banners-bg: #ed0233;
+$juri-overlay-bg: #102654;
+$footer-bg: #030a1a;
 
 // icons
 $light-icon-color: $base-light-color;
@@ -38,4 +41,4 @@ $dark-icon-color: $base-dark-color;
 
 // form
 $base-form-color: $base-light-color;
-$error-form-color: #FF121F;
+$error-form-color: #ff121f;

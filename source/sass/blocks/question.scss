@@ -1,5 +1,6 @@
 // .question {}
 // .question__wrapper {}
+
 .question__content {
   @include font-set(20px, 20px, 400);
 
@@ -14,12 +15,30 @@
   }
 }
 // .question__text {}
-// .question__more-button {}
+.question__more-button {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid $border-button-second-dark;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .question__answer {
   @include font-set(16px, 20px, 300);
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+  }
+}
+
+.question__wrapper[open] {
+  summary button{
+    background-color: $base-dark-bg;
   }
 }

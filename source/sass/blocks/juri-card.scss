@@ -1,6 +1,11 @@
 // .juri-card {}
 // .juri-card__photo {}
-// .juri-card__overlay {}
+.juri-card__overlay {
+  color: $light-text-color;
+  background-color: $juri-overlay-bg;
+  opacity: 0.89;
+}
+
 // .juri-card__name {}
 // .juri-card__specialization {}
 .juri-card__about-list {
