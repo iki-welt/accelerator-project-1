@@ -1,5 +1,17 @@
-// .header {}
-// .header__logo {}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media (min-width:$tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
 .header__phone {
   @include link-default;
   @include font-set(22px, 22px, 700);
