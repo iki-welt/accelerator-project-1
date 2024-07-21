@@ -1,12 +1,88 @@
-// .price {}
-// .price__container {}
-// .price__title {}
-.price__period-list {
-  @include font-set(16px, 16px, 400);
+.price {
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-image: url(../../img/bg-price-img-tablet-x1.png);
+    background-size: 325px 388px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    @supports (background-image: url(../../img/bg-price-img-tablet-x1.webp)) {
+      background-image: url(../../img/bg-price-img-tablet-x1.webp)
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/bg-price-img-tablet-x2.png);
+
+      @supports (background-image: url(../../img/bg-price-img-tablet-x2.webp)) {
+        background-image: url(../../img/bg-price-img-tablet-x2.webp)
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url(../../img/bg-price-img-pc-x1.png);
+    background-size: 303px 448px;
+
+    @supports (background-image: url(../../img/bg-price-img-pc-x1.webp)) {
+      background-image: url(../../img/bg-price-img-pc-x1.webp)
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/bg-price-img-pc-x2.png);
+
+      @supports (background-image: url(../../img/bg-price-img-pc-x2.webp)) {
+        background-image: url(../../img/bg-price-img-pc-x2.webp)
+      }
+    }
+  }
+}
+
+.price__title {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.price__period-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include font-set(16px, 16px, 400);
+  @include list-default;
+  margin-bottom: 30px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $unactive-tabs;
+    margin-top: -2px;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    column-gap: 50px;
+    width: fit-content;
     font-size: 18px;
     line-height: 18px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    &::after {
+      width: calc(100% - 50px);
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -14,7 +90,7 @@
     line-height: 20px;
   }
 }
-// .price__period-item {}
+
 .price__period-tab {
   padding: 0 0 10px 0;
   font-family: inherit;
@@ -29,5 +105,17 @@
   }
 }
 
-// .price__product-list {}
-// .price__product-item {}
+.price__product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  @include list-default;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}

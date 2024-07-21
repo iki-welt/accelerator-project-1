@@ -1,8 +1,24 @@
 .product-card {
+  display: grid;
+  row-gap: 18px;
+  padding: 50px 42px;
+  text-align: center;
   background-color: $base-light-bg;
+
+  @media (min-width: $tablet-width) {
+    width: 380px;
+    margin: 0 auto;
+    padding: 65px;
+    row-gap: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 17px;
+  }
 }
 
 .product-card__title {
+  margin: 0;
   @include font-set(22px, 22px, 700);
 
   @media (min-width: $tablet-width) {
@@ -16,8 +32,12 @@
   }
 }
 
-// .product-card__description {}
+.product-card__description {
+  margin: 0;
+}
+
 .product-card__price {
+  margin: 0;
   color: $accent-text-color;
 
   @include font-set(48px, 72px, 700);
@@ -29,14 +49,13 @@
 }
 
 .product-card__price-cost {
-}
+  display: grid;
+  margin: 0;
 
-.product-card__price-value {
   &::before {
     content: attr(data-value);
-    display: flex;
-    flex-wrap: wrap;
-
+    grid-column: 1/-1;
+    grid-row: 1/2;
     color: $shadow-text-color;
 
     @include font-set(80px, 120px, 700);
@@ -46,6 +65,12 @@
       line-height: 150px;
     }
   }
+}
+
+.product-card__price-value {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  align-self: end;
 
   &::after {
     content: "";
@@ -59,6 +84,16 @@
 }
 
 .product-card__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border: 2px solid $border-button-dark;
+
   @include link-default;
   @include font-set(12px, 12px, 700);
+
+  @media (min-width: $tablet-width) {
+    padding: 27px;
+  }
 }
