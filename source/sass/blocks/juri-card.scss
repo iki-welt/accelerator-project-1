@@ -1,18 +1,50 @@
-// .juri-card {}
-// .juri-card__photo {}
-.juri-card__overlay {
-  color: $light-text-color;
-  background-color: $juri-overlay-bg;
-  opacity: 0.89;
+.juri-card {
+  position: relative;
+  width: 260px;
+  height: 300px;
 }
 
-// .juri-card__name {}
-// .juri-card__specialization {}
+.juri-card__overlay {
+  position: absolute;
+  left: 0;
+  top: 192px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 260px;
+  height: 100%;
+  padding: 61px 40px;
+  color: $light-text-color;
+  overflow: hidden;
+
+  &--is-open {
+    top: 0;
+    gap: 10px;
+    background-color: $juri-overlay-bg;
+    opacity: 0.89;
+  }
+}
+
+.juri-card__name {
+  margin: 0;
+  text-align: center;
+}
+
+.juri-card__specialization {
+  margin: 0;
+  text-align: center;
+}
+
 .juri-card__about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding-left: 16px;
   @include font-set(14px, 20px, 400);
 
   @media (min-width: $tablet-width) {
     line-height: 22px;
   }
 }
-// .juri-card__about-item {}

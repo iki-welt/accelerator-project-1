@@ -1,8 +1,58 @@
 .juri {
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: $base-light-bg;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
-// .juri__container {}
-// .juri__title {}
-// .juri__list {}
-// .juri__item {}
+.juri__container {
+  padding: 0 30px;
+}
+
+.juri__title {
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+}
+
+.juri__slider-control {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+
+.juri__button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &--prev {
+    transform: rotate(180deg);
+  }
+}
+
+.juri__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
+}
