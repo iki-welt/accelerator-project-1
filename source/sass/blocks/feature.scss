@@ -1,53 +1,165 @@
-// .feature__name {}
-.feature__accent {
-  strong {
-    background: $gradient-text-color;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    @include font-set(64px, 64px, 700);
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
 
-    @media (min-width: $tablet-width) {
-      font-size: 70px;
-      line-height: 70px;
+  &--alt-colored {
+    position: relative;
+    padding: 30px 60px 40px;
+    gap: 20px;
+
+    background-color: $base-dark-bg;
+    color: $light-text-color;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 100vw;
+      height: 100%;
+      z-index: -1;
+
+      background-color: $base-dark-bg;
+      box-shadow: 100vw 0 0 $base-dark-bg;
     }
   }
 
-  span {
-    color: $sub-accent-text-color;
-    @include font-set(14px, 20px, 400);
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 12px 15px;
+    text-align: start;
 
-    @media (min-width: $tablet-width) {
-      line-height: 22px;
+    &--alt-colored {
+      grid-column: 1/-1;
+      display: flex;
+      gap: 25px;
+      width: 320px;
+      justify-self: center;
+      text-align: center;
+
+      &::before{
+        content: unset;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: repeat(2, min-content);
+    align-items: start;
+    gap: 8px 43px;
+
+    &--alt-colored {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    gap: 30px;
+    width: unset;
     }
   }
 }
 
-// .feature__describtion {}
+.feature h3 {
+  margin: 0;
 
-.feature--alt-colored {
-  background-color: $base-dark-bg;
-  color: $light-text-color;
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
 
-  p strong {
-    color: inherit;
-    background: none;
-    -webkit-text-fill-color: unset;
+.feature p {
+  margin: 0;
+
+  &:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  p span {
-    color: inherit;
+  &:last-of-type {}
 
-    @include font-set(22px, 22px, 700);
-
-    @media (min-width: $tablet-width) {
-      font-size: 24px;
-      line-height: 24px;
+  @media (min-width: $tablet-width) {
+    &:first-of-type {
+      grid-column: 1/2;
+      grid-row: 1/3;
     }
 
-    @media (min-width: $desktop-width) {
-      font-size: 26px;
-      line-height: 26px;
+    &:last-of-type {
+      grid-column: 2/3;
+      grid-row: 2/3;
     }
+  }
+}
+
+.feature strong {
+  background: $gradient-text-color;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include font-set(64px, 64px, 700);
+
+  @media (min-width: $tablet-width) {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+.feature span {
+  color: $sub-accent-text-color;
+  @include font-set(14px, 20px, 400);
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+    align-self: start;
+  }
+}
+
+.feature--alt-colored h3 {
+}
+
+.feature--alt-colored p {
+  &:first-of-type {
+    gap: 5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:first-of-type {
+      gap: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:first-of-type {
+      gap: 10px;
+      align-self: center;
+    }
+  }
+}
+
+.feature--alt-colored strong {
+  color: inherit;
+  background: none;
+  -webkit-text-fill-color: unset;
+}
+
+.feature--alt-colored span {
+  color: inherit;
+
+  @include font-set(22px, 22px, 700);
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
   }
 }
