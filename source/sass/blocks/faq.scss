@@ -79,5 +79,7 @@
 }
 
 .faq__questions-list {
+  border-top: 1px solid $underline-tabs;
+
   @include list-default;
 }

@@ -1,10 +1,28 @@
-// .question {}
-// .question__wrapper {}
+.question {
+  border-bottom: 1px solid $underline-tabs;
+}
 
-.question__content {
+.question__wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+}
+
+.question__wrapper summary {
+  display: grid;
+  grid-template-columns: 238px 1fr;
+  gap: 22px;
+  align-items: center;
+  list-style: none;
+
   @include font-set(20px, 20px, 400);
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: 560px 1fr;
     font-size: 22px;
     line-height: 22px;
   }
@@ -14,13 +32,38 @@
     line-height: 24px;
   }
 }
-// .question__text {}
-.question__more-button {
+
+.question__wrapper span {}
+
+.question__wrapper button {
+  justify-self: end;
+  position: relative;
   width: 30px;
   height: 30px;
   background-color: transparent;
   border: 1px solid $border-button-second-dark;
   border-radius: 50%;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background-color: $border-button-second-dark;
+  }
+
+  &::before {
+    width: 14px;
+    height: 1px;
+  }
+
+  &::after {
+    width: 1px;
+    height: 14px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -28,17 +71,36 @@
   }
 }
 
-.question__answer {
+.question__wrapper p {
+  width: 238px;
+  margin: 0;
+  margin-top: 20px;
   @include font-set(16px, 20px, 300);
 
   @media (min-width: $tablet-width) {
+    width: 560px;
+    margin-top: 10px;
+
     font-size: 18px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 660px;
+    margin-top: 23px;
+  }
 }
 
-.question__wrapper[open] {
-  summary button{
-    background-color: $base-dark-bg;
+.question__wrapper[open] button {
+  background-color: $base-dark-bg;
+
+  &::before,
+  &::after {
+    background-color: $border-button-light;
+  }
+
+  &::after {
+    width: 0;
+    height: 0;
   }
 }
