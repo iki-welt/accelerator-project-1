@@ -65,10 +65,17 @@
 
 .feature h3 {
   margin: 0;
+  @include font-set(18px, 20px, 400);
 
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     grid-row: 1/2;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+    line-height: 22px;
   }
 }
 
@@ -117,6 +124,18 @@
     line-height: 22px;
     align-self: start;
   }
+}
+
+.feature--alt-colored h3 {
+  // visually-hidden
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .feature--alt-colored p {
