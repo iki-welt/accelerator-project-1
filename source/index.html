@@ -486,7 +486,6 @@
           <div class="reviews__list swiper-wrapper">
 
             <div class="reviews__item review swiper-slide">
-              <!-- БЕЗ КЛАССА по каскаду - начало -->
               <div class="review__photo">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)"
@@ -503,11 +502,9 @@
                 <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
                   дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </blockquote>
-              <!-- БЕЗ КЛАССА по каскаду - начало -->
             </div>
 
             <div class="reviews__item review swiper-slide">
-              <!-- БЕЗ КЛАССА по каскаду - начало -->
               <div>
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)"
@@ -524,7 +521,6 @@
                 <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
                   дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </blockquote>
-              <!-- БЕЗ КЛАССА по каскаду - начало -->
             </div>
 
           </div>
@@ -549,63 +545,71 @@
       </div>
     </section>
 
-    <div class="datatest-wrapper" data-test="form">
-      <section class="form">
-        <div class="form__container container">
-          <h2 class="form__title primary-title">Бесплатное занятие</h2>
-          <form class="form__fields" action="https://echo.htmlacademy.ru/" method="post">
-            <ul class="form__list">
+    <div class="half-sections" data-test="form">
+      <div class="container container--half-sections">
+        <section class="form">
+          <div class="form__container container">
+            <h2 class="form__title primary-title">Бесплатное занятие</h2>
+            <form class="form__fields" action="https://echo.htmlacademy.ru/" method="post">
+              <ul class="form__list">
 
-              <li class="form__item form-field">
-                <label class="form-field__name" for="client-name">Имя</label>
-                <input class="form-field__inp" type="text" id="client-name" name="client-name">
-                <p class="form-field__error"></p>
-              </li>
+                <li class="form__item form-field">
+                  <input class="form-field__inp" type="text" id="client-name" name="client-name" placeholder=""
+                    required>
+                  <label class="form-field__name" for="client-name">Имя</label>
+                  <p class="form-field__error"></p>
+                </li>
 
-              <li class="form__item form-field">
-                <label class="form-field__name" for="client-phone">Телефон</label>
-                <input class="form-field__inp" type="tel" id="client-phone" name="client-phone">
-                <p class="form-field__error"></p>
-              </li>
+                <li class="form__item form-field">
+                  <input class="form-field__inp" type="tel" id="client-phone" name="client-phone" placeholder=""
+                    required>
+                  <label class="form-field__name" for="client-phone">Телефон</label>
+                  <p class="form-field__error"></p>
+                </li>
 
-            </ul>
-            <button class="form__submit" type="button">отправить</button>
-          </form>
-        </div>
-      </section>
+              </ul>
+              <button class="form__submit" type="button">отправить</button>
+            </form>
+          </div>
+        </section>
 
-      <section class="contacts">
-        <div class="contacts__container container">
-          <h2 class="contacts__title primary-title">Контакты</h2>
-          <dl class="contacts__list">
+        <section class="contacts">
+          <div class="contacts__container container">
+            <h2 class="contacts__title primary-title">Контакты</h2>
+            <dl class="contacts__list">
 
-            <div class="contacts__item contact">
-              <dt class="contact__name">Адрес:</dt>
-              <dd class="contact__value">г. Омск, ул. 60 лет Октября, 7</dd>
-            </div>
+              <div class="contacts__list contacts__list--left-column">
+                <div class="contacts__item contact">
+                  <dt class="contact__name">Адрес:</dt>
+                  <dd class="contact__value">г. Омск, ул. 60 лет Октября, 7</dd>
+                </div>
 
-            <div class="contacts__item contact">
-              <dt class="contact__name">График работы:</dt>
-              <dd class="contact__value">Пн-Вс: с 8:00 до 22:00</dd>
-            </div>
+                <div class="contacts__item contact">
+                  <dt class="contact__name">График работы:</dt>
+                  <dd class="contact__value">Пн-Вс: с 8:00 до 22:00</dd>
+                </div>
+              </div>
 
-            <div class="contacts__item contact">
-              <dt class="contact__name">Телефон:</dt>
-              <dd class="contact__value">
-                <a class="contact__link" href="tel:88005555555">8 800 555-55-55</a>
-              </dd>
-            </div>
+              <div class="contacts__list contacts__list--right-column">
+                <div class="contacts__item contact">
+                  <dt class="contact__name">Телефон:</dt>
+                  <dd class="contact__value">
+                    <a class="contact__link" href="tel:88005555555">8 800 555-55-55</a>
+                  </dd>
+                </div>
 
-            <div class="contacts__item contact">
-              <dt class="contact__name">Email:</dt>
-              <dd class="contact__value">
-                <a class="contact__link" href="mail-to:oмск@supergym.ru">oмск@supergym.ru</a>
-              </dd>
-            </div>
+                <div class="contacts__item contact">
+                  <dt class="contact__name">Email:</dt>
+                  <dd class="contact__value">
+                    <a class="contact__link" href="mail-to:oмск@supergym.ru">oмск@supergym.ru</a>
+                  </dd>
+                </div>
+              </div>
 
-          </dl>
-        </div>
-      </section>
+            </dl>
+          </div>
+        </section>
+      </div>
     </div>
   </main>
 
@@ -684,28 +688,3 @@
 </body>
 
 </html>
-
-<!-- пример использования спрайта -->
-<!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-  <svg>
-    <use href="/__spritemap#sprite-user"></use>
-  </svg> -->
-
-<!-- ретина растр-->
-<!--
-<picture>
-  <source type="image/webp" media="(min-width: 1366px)" srcset="img/hero-img-pc-x1.webp 1x, img/hero-img-pc-x2.webp 2x" width="500" height="524">
-  <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-img-pc-x1.webp 1x, img/hero-img-pc-x2.webp 2x" width="500" height="524">
-  <source type="image/webp" srcset="img/hero-img-tablet-x1.webp 1x, img/hero-img-tablet-x2.webp 2x" width="324" height="390">
-  <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/hero-img-pc-x1.jpg 1x, img/hero-img-pc-x2.jpg 2x" width="500" height="524">
-  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/hero-img-pc-x1.jpg 1x, img/hero-img-pc-x2.jpg 2x" width="500" height="524">
-  <img src="img/hero-img-tablet-x1.jpg" srcset="img/hero-img-tablet-x2.jpg 2x" width="324" height="390" alt="Тренажёрный зал 'supergym'.">
-</picture> -->
-
-<!-- ретина вектор -->
-<!-- <picture>
-  <source type="image/svg+xml" media="(min-width: 1366px)" srcset="/__spritemap#sprite-logo" width="130" height="26">
-  <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-logo" width="110" height="22">
-  <img class="logo__img" src="/__spritemap#sprite-logo" width="100" height="20"
-  alt="Логотип 'supergym'.">
-</picture> -->

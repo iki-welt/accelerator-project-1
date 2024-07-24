@@ -1,18 +1,71 @@
 .form {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
   color: $light-text-color;
   background-color: $base-dark-bg;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
-// .form__container {}
-// .form__title {}
-// .form__fields {}
-// .form__list {}
-// .form__item {}
+.form__container {
+  display: grid;
+  gap: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 164px;
+    padding-right: 164px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: unset;
+    padding: 0 103px;
+  }
+}
+
+.form__title {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.form__fields {
+  display: grid;
+  gap: 36px;
+}
+
+.form__list {
+  display: grid;
+  gap: 36px;
+
+  @include list-default;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
 
 .form__submit {
+  padding: 22px;
+
   color: inherit;
   background-color: transparent;
   border: 2px solid $border-button-light;
 
   @include font-set(12px, 12px, 700);
+
+  @media (min-width: $tablet-width) {
+    padding: 27px;
+  }
 }

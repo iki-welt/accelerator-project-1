@@ -1,4 +1,35 @@
-// .form-field {}
-// .form-field__name {}
-// .form-field__inp {}
-// .form-field__error {}
+.form-field {
+  position: relative;
+}
+
+.form-field__name {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  opacity: 0.4;
+}
+
+.form-field__inp {
+  width: 100%;
+
+  color: $light-text-color;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $underline-tabs;
+
+  @include font-set(14px, 20px, 400);
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+  }
+}
+
+.form-field__error {
+  margin: 0;
+  display: none;
+}
+
+.form-field__inp:placeholder-shown +.form-field__name {
+  display: block;
+}

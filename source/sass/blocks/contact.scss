@@ -1,10 +1,33 @@
-// .contact {}
-.contact__name {
+.contact {
+  display: grid;
+  gap: 12px;
+
   @include font-set(14px, 20px, 400);
 
   @media (min-width: $tablet-width) {
+    gap: 5px;
     line-height: 22px;
   }
 }
-// .contact__value {}
-// .contact__link {}
+
+.contact__name {
+  @include font-set(20px, 20px, 400);
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.contact__value {
+  margin: 0;
+}
+
+.contact__link {
+  @include link-default;
+}
