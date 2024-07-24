@@ -19,6 +19,29 @@
   align-items: center;
   width: 25px;
   height: 25px;
+  color: $footer-bg;
   background-color: $base-light-bg;
   border-radius: 50%;
+
+  &:hover {
+    color: $light-icon-color;
+    background-color: $underline-tabs;
+  }
+
+  &:focus {
+    color: $light-icon-color;
+    background-color: $accent-text-color;
+    outline: none;
+  }
+
+  &:active {
+    color: $light-icon-color;
+    background-color: $dark-icon-color;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $footer-bg;
+    background-color: transparentize($light-icon-color, 0.3);
+  }
 }

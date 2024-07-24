@@ -47,7 +47,6 @@
   }
 }
 
-// .games__timings {}
 .games__description {
   grid-column: 1/-1;
   margin: 0;
@@ -73,5 +72,30 @@
   @media (min-width: $tablet-width) {
     padding: 27px;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $light-text-color;
+    background-image: $buttons-bg;
+    border-image: $buttons-bg 1;
+  }
+
+  &:focus {
+    opacity: 0.8;
+    outline: 2px solid #000000;
+  }
+
+  &:active {
+    color: transparentize($light-text-color, $amount: 0.7);
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $dark-text-color;
+    background-image: none;
+    background-color: transparent;
+    border-color: $border-button-dark;
+    opacity: 0.3;
+  }
 }
-// .games__img {}

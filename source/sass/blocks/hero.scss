@@ -39,9 +39,6 @@
   }
 }
 
-.hero__classes-item {
-}
-
 .hero__main-content {
   text-align: end;
 
@@ -97,6 +94,30 @@
     align-self: end;
     padding: 25px;
     margin-bottom: 52px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+    background-color: $base-light-bg;
+  }
+
+  &:focus {
+    background-color: transparentize($base-light-bg, 0.8);
+    outline: 2px solid #000000;
+  }
+
+  &:active {
+    color: $dark-text-color;
+    background-color: $base-light-bg;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $light-text-color;
+    background-color: transparent;
+    border-color: $border-button-light;
+    opacity: 0.5;
   }
 }
 

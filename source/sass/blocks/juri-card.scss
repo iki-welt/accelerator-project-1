@@ -3,6 +3,14 @@
   width: 260px;
   height: 300px;
   overflow: hidden;
+
+  &:hover .juri-card__overlay,
+  &:focus .juri-card__overlay {
+    top: 0;
+    gap: 10px;
+    background-color: $juri-overlay-bg;
+    opacity: 0.89;
+  }
 }
 
 .juri-card__overlay {
@@ -18,12 +26,7 @@
   padding: 61px 40px;
   color: $light-text-color;
 
-  &--is-open {
-    top: 0;
-    gap: 10px;
-    background-color: $juri-overlay-bg;
-    opacity: 0.89;
-  }
+  transition: 0.3s ease;
 }
 
 .juri-card__name {

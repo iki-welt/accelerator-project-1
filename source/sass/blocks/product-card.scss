@@ -1,19 +1,34 @@
 .product-card {
   display: grid;
   row-gap: 18px;
-  padding: 50px 42px;
+  padding: 43px 35px;
   text-align: center;
   background-color: $base-light-bg;
+  border: 7px solid $base-light-bg;
 
   @media (min-width: $tablet-width) {
     width: 380px;
     margin: 0 auto;
-    padding: 65px;
+    padding: 58px;
     row-gap: 22px;
   }
 
   @media (min-width: $desktop-width) {
     row-gap: 17px;
+  }
+
+  &:hover,
+  &:has(.product-card__link:hover),
+  &:has(.product-card__link:focus) {
+    border-width: 7px;
+    border-style: solid;
+    border-image: $buttons-bg 1;
+  }
+
+  &:hover .product-card__link {
+    color: $light-text-color;
+    background-image: $buttons-bg;
+    border-image: $buttons-bg 1;
   }
 }
 
@@ -95,5 +110,31 @@
 
   @media (min-width: $tablet-width) {
     padding: 27px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $light-text-color;
+    background-image: $buttons-bg;
+    border-image: $buttons-bg 1;
+  }
+
+  &:focus {
+    opacity: 0.8;
+    outline: 2px solid #000000;
+  }
+
+  &:active {
+    color: transparentize($light-text-color, $amount: 0.7);
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $dark-text-color;
+    background-image: none;
+    background-color: transparent;
+    border-color: $border-button-dark;
+    opacity: 0.3;
   }
 }

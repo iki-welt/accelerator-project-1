@@ -67,6 +67,34 @@
     width: 40px;
     height: 40px;
   }
+
+  &:hover {
+    background-color: $base-dark-bg;
+
+    &::before,
+    &::after {
+      background-color: $border-button-light;
+    }
+  }
+
+  &:focus {
+    background-color: $underline-tabs;
+
+    &::before,
+    &::after {
+      background-color: $border-button-light;
+    }
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border-color: $border-button-second-dark;
+
+    &::before,
+    &::after {
+      background-color: $border-button-second-dark;
+    }
+  }
 }
 
 .question__wrapper p {

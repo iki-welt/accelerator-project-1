@@ -16,4 +16,18 @@
 
 .main-nav__link {
   @include link-default;
+
+  &:hover {
+    color: transparentize($border-button-second-dark, 0.5);
+  }
+
+  &:focus {
+    color: $border-button-second-dark;
+    outline: none;
+  }
+
+  &:active {
+    color: $dark-text-color;
+    border-color: $border-button-dark;
+  }
 }

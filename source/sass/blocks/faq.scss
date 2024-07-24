@@ -58,6 +58,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr;
+    margin-bottom: auto;
   }
 }
 
@@ -66,11 +67,29 @@
   padding: 14px;
   background-color: transparent;
   border: 1px solid $faq-tabs;
+  cursor: pointer;
 
+  &:hover {
+    border-color: $border-button-dark;
+  }
+
+  &:focus {
+    background-color: $base-light-bg;
+    border-color: $border-button-dark;
+    outline: none;
+  }
+
+  &:active,
   &--is-active {
     color: $light-text-color;
     background-image: $buttons-bg;
     border-image: $buttons-bg 1;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border-color: $border-button-dark;
+    opacity: 0.2;
   }
 
   @media (min-width: $tablet-width) {

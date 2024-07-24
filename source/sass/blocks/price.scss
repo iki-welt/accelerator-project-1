@@ -94,13 +94,32 @@
 .price__period-tab {
   padding: 0 0 10px 0;
   font-family: inherit;
-  color: inherit;
+  color: transparentize($dark-text-color, 0.5);
   background-color: transparent;
   border: none;
-  opacity: 0.5;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
 
-  &--is-active {
-    border-bottom: 2px solid $accent-tabs;
+  &:hover {
+    color: transparentize($dark-text-color, 0.7);
+    border-color: $underline-hover;
+  }
+
+  &:focus {
+    color: $dark-text-color;
+    border-color: $border-button-dark;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    border-color: transparentize($border-button-dark, 0.3);
+  }
+
+  &--is-active,
+  &:active {
+    color: $dark-text-color;
+    border-color: $accent-tabs;
     opacity: 1;
   }
 }

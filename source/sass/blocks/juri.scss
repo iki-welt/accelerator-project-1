@@ -38,13 +38,34 @@
 }
 
 .juri__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: $dark-icon-color;
   background-color: transparent;
   padding: 0;
-  border: none;
+  border: 1px solid transparent;
+  border-radius: 50%;
   cursor: pointer;
 
   &--prev {
     transform: rotate(180deg);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $border-button-dark;
+  }
+
+  &:focus {
+    background-color: $shadow-text-color;
+  }
+
+  &:active {
+    color: $light-icon-color;
+    background-color: $base-dark-bg;
   }
 }
 
