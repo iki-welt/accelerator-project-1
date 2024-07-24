@@ -285,7 +285,7 @@
           </div>
 
           <div class="juri__slider-control swiper-button-prev">
-            <button class="juri__button juri__button--prev">
+            <button class="juri__button juri__button--prev" type="button">
               <span class="visually-hidden">Предыдущий слайд</span>
               <svg width="16" height="32">
                 <use href="/__spritemap#sprite-arrow-swiper"></use>
@@ -293,7 +293,7 @@
             </button>
           </div>
           <div class="juri__slider-control swiper-button-next">
-            <button class="juri__button">
+            <button class="juri__button" type="button">
               <span class="visually-hidden">Следующий слайд</span>
               <svg width="16" height="32">
                 <use href="/__spritemap#sprite-arrow-swiper"></use>
@@ -337,7 +337,7 @@
             <p>Современные тренажёры на все группы мышц</p>
           </li>
 
-          <li class="features__item feature">
+          <li class="features__item feature feature--dt-toplined">
             <p>
               <strong>350</strong>
               <span>мест</span>
@@ -346,7 +346,7 @@
             <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
           </li>
 
-          <li class="features__item feature">
+          <li class="features__item feature feature--dt-toplined">
             <p>
               <strong>5+</strong>
               <span>лет</span>
@@ -482,51 +482,70 @@
       <div class="reviews__container container">
         <h2 class="reviews__title primary-title">Отзывы</h2>
         <!-- слайдер -->
-        <ul class="reviews__list">
+        <div class="reviews__wrapper swiper">
+          <div class="reviews__list swiper-wrapper">
 
-          <li class="reviews__item review">
-            <!-- БЕЗ КЛАССА по каскаду - начало -->
-            <div class="review__photo">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/review-img-l-x1.webp 1x, img/review-img-l-x2.webp 2x" width="80" height="80">
-                <source type="image/webp" srcset="img/review-img-s-x1.webp 1x, img/review-img-s-x2.webp 2x" width="68"
-                  height="68">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/review-img-l-x1.jpg 1x, img/review-img-l-x2.jpg 2x" width="80" height="80">
-                <img src="img/review-img-s-x1.jpg" srcset="img/review-img-s-x2.jpg 2x" width="68" height="68" alt="">
-              </picture>
+            <div class="reviews__item review swiper-slide">
+              <!-- БЕЗ КЛАССА по каскаду - начало -->
+              <div class="review__photo">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/review-img-l-x1.webp 1x, img/review-img-l-x2.webp 2x" width="80" height="80">
+                  <source type="image/webp" srcset="img/review-img-s-x1.webp 1x, img/review-img-s-x2.webp 2x" width="68"
+                    height="68">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/review-img-l-x1.jpg 1x, img/review-img-l-x2.jpg 2x" width="80" height="80">
+                  <img src="img/review-img-s-x1.jpg" srcset="img/review-img-s-x2.jpg 2x" width="68" height="68" alt="">
+                </picture>
+              </div>
+              <cite class="review__author primary-subtitle">Анна Орлова</cite>
+              <blockquote class="review__text">
+                <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
+                  дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </blockquote>
+              <!-- БЕЗ КЛАССА по каскаду - начало -->
             </div>
-            <cite class="review__author primary-subtitle">Анна Орлова</cite>
-            <blockquote class="review__text">
-              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
-                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </blockquote>
-            <!-- БЕЗ КЛАССА по каскаду - начало -->
-          </li>
 
-          <li class="reviews__item review">
-            <!-- БЕЗ КЛАССА по каскаду - начало -->
-            <div class="review__photo">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/review-img-l-x1.webp 1x, img/review-img-l-x2.webp 2x" width="80" height="80">
-                <source type="image/webp" srcset="img/review-img-s-x1.webp 1x, img/review-img-s-x2.webp 2x" width="68"
-                  height="68">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/review-img-l-x1.jpg 1x, img/review-img-l-x2.jpg 2x" width="80" height="80">
-                <img src="img/review-img-s-x1.jpg" srcset="img/review-img-s-x2.jpg 2x" width="68" height="68" alt="">
-              </picture>
+            <div class="reviews__item review swiper-slide">
+              <!-- БЕЗ КЛАССА по каскаду - начало -->
+              <div>
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/review-img-l-x1.webp 1x, img/review-img-l-x2.webp 2x" width="80" height="80">
+                  <source type="image/webp" srcset="img/review-img-s-x1.webp 1x, img/review-img-s-x2.webp 2x" width="68"
+                    height="68">
+                  <source type="image/jpeg" media="(min-width: 768px)"
+                    srcset="img/review-img-l-x1.jpg 1x, img/review-img-l-x2.jpg 2x" width="80" height="80">
+                  <img src="img/review-img-s-x1.jpg" srcset="img/review-img-s-x2.jpg 2x" width="68" height="68" alt="">
+                </picture>
+              </div>
+              <cite>Анна Орлова</cite>
+              <blockquote>
+                <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
+                  дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </blockquote>
+              <!-- БЕЗ КЛАССА по каскаду - начало -->
             </div>
-            <cite class="review__author primary-subtitle">Анна Орлова</cite>
-            <blockquote class="review__text">
-              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
-                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </blockquote>
-            <!-- БЕЗ КЛАССА по каскаду - начало -->
-          </li>
 
-        </ul>
+          </div>
+
+          <div class="reviews__slider-control swiper-button-prev">
+            <button class="reviews__button reviews__button--prev" type="button">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+              <svg width="16" height="32">
+                <use href="/__spritemap#sprite-arrow-swiper"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="reviews__slider-control swiper-button-next">
+            <button class="reviews__button" type="button">
+              <span class="visually-hidden">Следующий отзыв</span>
+              <svg width="16" height="32">
+                <use href="/__spritemap#sprite-arrow-swiper"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 

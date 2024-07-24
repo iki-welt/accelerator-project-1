@@ -53,12 +53,20 @@
     grid-template-rows: repeat(2, min-content);
     align-items: start;
     gap: 8px 43px;
+    padding-bottom: 40px;
 
     &--alt-colored {
       grid-column: 2/3;
       grid-row: 1/3;
       gap: 30px;
       width: unset;
+      padding-bottom: 0;
+    }
+
+    &--dt-toplined {
+      border-top: 2px solid $feature-separator;
+      padding-bottom: 0;
+      padding-top: 40px;
     }
   }
 }
