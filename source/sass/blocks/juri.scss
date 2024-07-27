@@ -16,6 +16,10 @@
 
 .juri__container {
   padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 48px;
+  }
 }
 
 .juri__title {
@@ -27,53 +31,80 @@
   }
 }
 
+.juri__slider {
+  position: relative;
+  @media (min-width: $tablet-width) {
+    padding-left: 55px;
+    padding-right: 55px;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      display: block;
+      height: 100%;
+      width: 20px;
+      background-color: $base-light-bg;
+      z-index: 1;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+}
+
+
+.juri__list {
+  z-index: 0;
+}
+
 .juri__slider-control {
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-  }
-}
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: $dark-icon-color;
+    background-color: transparent;
+    padding: 9px 17px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
 
-.juri__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  color: $dark-icon-color;
-  background-color: transparent;
-  padding: 0;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  cursor: pointer;
+    &--prev {
+      left: 0;
+      transform: rotate(180deg);
+    }
 
-  &--prev {
-    transform: rotate(180deg);
-  }
+    &--next {
+      right: 0;
+    }
 
-  &:hover,
-  &:focus {
-    border-color: $border-button-dark;
-  }
+    &::after {
+      content: unset;
+    }
 
-  &:focus {
-    background-color: $shadow-text-color;
-  }
+    &:hover,
+    &:focus {
+      border-color: $border-button-dark;
+    }
 
-  &:active {
-    color: $light-icon-color;
-    background-color: $base-dark-bg;
-  }
-}
+    &:focus {
+      background-color: $shadow-text-color;
+    }
 
-.juri__list {
-  display: flex;
-  flex-wrap: wrap;
-
-  @media (min-width: $tablet-width) {
-    gap: 40px;
+    &:active {
+      color: $light-icon-color;
+      background-color: $base-dark-bg;
+    }
   }
 }

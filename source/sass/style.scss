@@ -1,6 +1,7 @@
 /* VENDOR */
-@import "vendor/normalize.scss";
-// @import "vendor/swiper.scss";
+@import "./vendor/normalize.scss";
+@import "./vendor/swiper.scss";
+@import "./vendor/navigation.scss";
 
 /* GLOBAL */
 @import "./common/mixins.scss";
