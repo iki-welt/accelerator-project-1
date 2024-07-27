@@ -116,8 +116,8 @@
     border-color: transparentize($border-button-dark, 0.3);
   }
 
-  &--is-active,
-  &:active {
+  &:active,
+  &--is-active {
     color: $dark-text-color;
     border-color: $accent-tabs;
     opacity: 1;

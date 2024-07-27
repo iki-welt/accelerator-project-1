@@ -1,3 +1,5 @@
+import { markActiveTab } from './utils.js';
+
 const QuestionsGroups = {
   CENTER: [
     {
@@ -73,19 +75,15 @@ const QuestionsGroups = {
       question: 'Нужна ли медицинская справка для посещения залов и бассейна?',
       answer: 'Нет. Однако мы настоятельно рекомендуем провести обследование перед началом тренировок и сообщить вашему тренеру о всех противопоказаниях, чтобы ваши трнировки были максимально комфортными и наименее травматичными.'
     }
-  ]
+  ],
+
+  SETTINGS: {
+    targetTab: '.faq__theme-button',
+    activeTab: 'faq__theme-button--is-active'
+  }
 };
 
 const Questions = document.querySelectorAll('.question');
-
-const markActiveTab = (tab) => {
-  const clickedTab = tab.matches('.faq__theme-button--is-active');
-  if (!clickedTab) {
-    const activeTab = document.querySelector('.faq__theme-button--is-active');
-    activeTab.classList.remove('faq__theme-button--is-active');
-    tab.classList.add('faq__theme-button--is-active');
-  }
-};
 
 const renderQuestion = (questionEl, {question, answer}) => {
   const questionText = questionEl.querySelector('span');
@@ -98,12 +96,12 @@ const renderFAQ = (dataArr) => {
   Questions.forEach((questionEl, index) => renderQuestion(questionEl, dataArr[index]));
 };
 
-const onTabClick = (evt) => {
+const onFAQTabClick = (evt) => {
   const clickedEl = evt.target.matches('.faq__theme-button');
   if (clickedEl) {
     evt.preventDefault();
     const currentEl = evt.target;
-    markActiveTab(currentEl);
+    markActiveTab(currentEl, QuestionsGroups);
     const tabId = currentEl.id;
     const questionsData = QuestionsGroups[tabId.toUpperCase()];
     if (questionsData) {
@@ -112,4 +110,4 @@ const onTabClick = (evt) => {
   }
 };
 
-export { onTabClick };
+export { onFAQTabClick };

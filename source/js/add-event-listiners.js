@@ -1,9 +1,18 @@
-import { onTabClick } from './faq-switch-groups';
+import { onPriceTabClick } from './price-switch-groups';
+import { onFAQTabClick } from './faq-switch-groups';
 
-const tabsContainerEl = document.querySelector('.faq__themes-list');
+const tabsFAQContainerEl = document.querySelector('.faq__themes-list');
+const tabsPriceContainerEl = document.querySelector('.price__period-list');
 
-const addTabsListeners = () => {
-  tabsContainerEl.addEventListener('click', onTabClick);
+const addPriceListeners = () => {
+  tabsPriceContainerEl.addEventListener('click', onPriceTabClick);
 };
 
-export { addTabsListeners };
+const addFAQListeners = () => {
+  tabsFAQContainerEl.addEventListener('click', onFAQTabClick);
+};
+
+export {
+  addFAQListeners,
+  addPriceListeners
+};
