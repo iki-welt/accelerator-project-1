@@ -1,6 +1,7 @@
 import './juri-slider';
 import './review-slider';
-import { addPriceListeners, addFAQListeners } from './add-event-listiners';
+import { addAboutVideoListener, addPriceListeners, addFAQListeners } from './add-event-listiners';
 
+addAboutVideoListener();
 addPriceListeners();
 addFAQListeners();
