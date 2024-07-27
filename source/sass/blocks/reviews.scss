@@ -43,8 +43,22 @@
   }
 }
 
-// .reviews__slider-control
-.reviews__button {
+.reviews__wrapper {
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 89px;
+    padding-right: 89px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 104px;
+    padding-right: 104px;
+  }
+}
+
+.reviews__slider-control {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -53,6 +67,7 @@
     align-items: center;
     width: 50px;
     height: 50px;
+    padding: 9px 17px;
     color: $dark-icon-color;
     background-color: transparent;
     border: 1px solid transparent;
@@ -62,6 +77,10 @@
     &--prev {
       transform: rotate(180deg);
     }
+  }
+
+  &::after {
+    content: unset;
   }
 
   &:hover,
@@ -76,5 +95,11 @@
   &:active {
     color: $light-icon-color;
     background-color: $base-dark-bg;
+  }
+
+  &--disabled {
+    border: none;
+    background-color: transparent;
+    color: $faq-tabs;
   }
 }
