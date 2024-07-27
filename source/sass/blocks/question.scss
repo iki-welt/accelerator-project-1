@@ -33,7 +33,7 @@
   }
 }
 
-.question__wrapper button {
+.question__wrapper div {
   justify-self: end;
   position: relative;
   width: 30px;
@@ -117,7 +117,7 @@
   }
 }
 
-.question__wrapper[open] button {
+.question__wrapper[open] div {
   background-color: $base-dark-bg;
 
   &::before,

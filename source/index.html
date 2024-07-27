@@ -469,16 +469,16 @@
         <h2 class="faq__title primary-title">Вопросы и ответы</h2>
         <ul class="faq__themes-list">
           <li class="faq__themes-item">
-            <button class="faq__theme-button faq__theme-button--is-active">Центр</button>
+            <button class="faq__theme-button faq__theme-button--is-active" id="center" type="button">Центр</button>
           </li>
           <li class="faq__themes-item">
-            <button class="faq__theme-button">Абонемент</button>
+            <button class="faq__theme-button" id="memberships" type="button">Абонемент</button>
           </li>
           <li class="faq__themes-item">
-            <button class="faq__theme-button">Услуги</button>
+            <button class="faq__theme-button" id="services" type="button">Услуги</button>
           </li>
           <li class="faq__themes-item">
-            <button class="faq__theme-button">Правила</button>
+            <button class="faq__theme-button" id="rules" type="button">Правила</button>
           </li>
         </ul>
 
@@ -486,9 +486,9 @@
 
           <li class="faq__questions-item question">
             <details class="question__wrapper" open>
-              <summary>
+              <summary tabindex="-1">
                 <span>Как стать членом фитнес&#8209;центра?</span>
-                <button type="button"></button>
+                <div tabindex="1"></div>
               </summary>
               <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и
                 подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт
@@ -498,9 +498,9 @@
 
           <li class="faq__questions-item question">
             <details class="question__wrapper">
-              <summary>
+              <summary tabindex="-1">
                 <span>Где можно посмотреть расписание?</span>
-                <button type="button"></button>
+                <div tabindex="1"></div>
               </summary>
               <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном
                 сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на
@@ -510,9 +510,9 @@
 
           <li class="faq__questions-item question">
             <details class="question__wrapper">
-              <summary>
+              <summary tabindex="-1">
                 <span>Есть кулеры в центре? Предоставляются полотенца?</span>
-                <button type="button"></button>
+                <div tabindex="1"></div>
               </summary>
               <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и
                 подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт
@@ -522,13 +522,11 @@
 
           <li class="faq__questions-item question">
             <details class="question__wrapper">
-              <summary>
+              <summary tabindex="-1">
                 <span>Сколько тренеров работает в клубе и какова их квалификация?</span>
-                <button type="button"></button>
+                <div tabindex="1"></div>
               </summary>
-              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и
-                подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт
-                вам на почту.</p>
+              <p>На каждом направлении работает не менее 5 высококвалифицированных тренеров со стажем работы не менее 3 лет.</p>
             </details>
           </li>
 
@@ -583,16 +581,16 @@
           </div>
 
           <div class="reviews__slider-control reviews__slider-control--prev swiper-button-prev">
-              <span class="visually-hidden">Предыдущий отзыв</span>
-              <svg width="16" height="32">
-                <use href="/__spritemap#sprite-arrow-swiper"></use>
-              </svg>
+            <span class="visually-hidden">Предыдущий отзыв</span>
+            <svg width="16" height="32">
+              <use href="/__spritemap#sprite-arrow-swiper"></use>
+            </svg>
           </div>
           <div class="reviews__slider-control reviews__slider-control--next swiper-button-next">
-              <span class="visually-hidden">Следующий отзыв</span>
-              <svg width="16" height="32">
-                <use href="/__spritemap#sprite-arrow-swiper"></use>
-              </svg>
+            <span class="visually-hidden">Следующий отзыв</span>
+            <svg width="16" height="32">
+              <use href="/__spritemap#sprite-arrow-swiper"></use>
+            </svg>
           </div>
         </div>
       </div>
