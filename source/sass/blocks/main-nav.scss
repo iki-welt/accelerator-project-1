@@ -6,7 +6,7 @@
   @include list-default;
 
   @media (min-width: $tablet-width) {
-   gap: 30px;
+    gap: 30px;
   }
 
   @media (min-width: $desktop-width) {

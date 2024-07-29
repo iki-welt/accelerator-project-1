@@ -1,5 +1,5 @@
-import { Swiper } from './swiper';
-import { Navigation } from './modules';
+import { Swiper } from './vendor/swiper';
+import { Navigation } from './vendor/modules';
 
 const reviewSlider = new Swiper('.reviews__wrapper', {
   modules: [ Navigation ],

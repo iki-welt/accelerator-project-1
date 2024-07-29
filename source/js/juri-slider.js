@@ -1,5 +1,5 @@
-import { Swiper } from './swiper';
-import { Navigation } from './modules';
+import { Swiper } from './vendor/swiper';
+import { Navigation } from './vendor/modules';
 
 const juriSlider = new Swiper('.juri__slider', {
   modules: [ Navigation ],
