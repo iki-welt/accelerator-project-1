@@ -41,33 +41,6 @@
   }
 }
 
-.offer__wrapper {
-  @include list-default;
-
-  @media (min-width: $desktop-width) {
-    align-self: end;
-  }
-}
-
-.offer__subwrapper {
-  display: grid;
-  gap: 30px;
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    grid-column: span 2;
-    grid-template-columns: 1fr 1fr;
-    gap: 35px 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: unset;
-    grid-template-columns: 1fr;
-    gap: 30px 40px;
-    align-self: end;
-  }
-}
-
 .offer__main-content {
   display: grid;
   justify-items: center;
