@@ -63,6 +63,6 @@
   }
 }
 
-.form-field__inp:placeholder-shown+.form-field__name {
+.form-field__inp:placeholder-shown + .form-field__name {
   display: block;
 }

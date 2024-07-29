@@ -6,47 +6,11 @@
   gap: 12px;
   text-align: center;
 
-  &--alt-colored {
-    position: relative;
-    padding: 30px 60px 40px;
-    gap: 20px;
-
-    background-color: $base-dark-bg;
-    color: $light-text-color;
-
-    &::before {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 0;
-      display: block;
-      width: 100vw;
-      height: 100%;
-      z-index: -1;
-
-      background-color: $base-dark-bg;
-      box-shadow: 100vw 0 0 $base-dark-bg;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: min-content 1fr;
     gap: 12px 15px;
     text-align: start;
-
-    &--alt-colored {
-      grid-column: 1/-1;
-      display: flex;
-      gap: 25px;
-      width: 320px;
-      justify-self: center;
-      text-align: center;
-
-      &::before {
-        content: unset;
-      }
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -71,8 +35,45 @@
   }
 }
 
+.feature--alt-colored {
+  position: relative;
+  padding: 30px 60px 40px;
+  gap: 20px;
+
+  background-color: $base-dark-bg;
+  color: $light-text-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+
+    background-color: $base-dark-bg;
+    box-shadow: 100vw 0 0 $base-dark-bg;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    display: flex;
+    gap: 25px;
+    width: 320px;
+    justify-self: center;
+    text-align: center;
+
+    &::before {
+      content: unset;
+    }
+  }
+}
+
 .feature h3 {
   margin: 0;
+
   @include font-set(18px, 20px, 400);
 
   @media (min-width: $tablet-width) {
@@ -113,7 +114,6 @@
 .feature strong {
   background: $gradient-text-color;
   background-clip: text;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   @include font-set(64px, 64px, 700);
@@ -126,6 +126,7 @@
 
 .feature span {
   color: $sub-accent-text-color;
+
   @include font-set(14px, 20px, 400);
 
   @media (min-width: $tablet-width) {

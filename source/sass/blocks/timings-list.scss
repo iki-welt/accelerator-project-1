@@ -16,6 +16,7 @@
 // .timings-list__item {}
 .timings-list__item-name {
   border-bottom: 1px solid $base-light-color;
+
   @include font-set(16px, 20px, 300);
 
   @media (min-width: $tablet-width) {
@@ -23,21 +24,24 @@
     line-height: 24px;
   }
 }
+
 .timings-list__item-value {
   display: flex;
   align-items: center;
   margin: 0;
+
   @include font-set(24px, 24px, 700);
 
-    @media (min-width: $desktop-width) {
-      font-size: 40px;
-      line-height: 40px;
-    }
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .timings-list__subvalue {
   width: min-content;
   margin-left: 3px;
+
   @include font-set(14px, 14px, 400);
 
   @media (min-width: $tablet-width) {

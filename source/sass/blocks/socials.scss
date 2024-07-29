@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+
   @include list-default;
 
   @media (min-width: $tablet-width) {
@@ -42,6 +43,6 @@
   &:disabled,
   &--disabled {
     color: $footer-bg;
-    background-color: transparentize($light-icon-color, 0.3);
+    background-color: color.adjust($light-icon-color, $alpha: 0.3);
   }
 }

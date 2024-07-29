@@ -45,6 +45,7 @@
   gap: 12px;
   margin: 0;
   padding-left: 16px;
+
   @include font-set(14px, 20px, 400);
 
   @media (min-width: $tablet-width) {

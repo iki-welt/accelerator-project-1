@@ -50,6 +50,7 @@
 .games__description {
   grid-column: 1/-1;
   margin: 0;
+
   @include font-set(16px, 20px, 300);
 
   @media (min-width: $tablet-width) {
@@ -57,6 +58,7 @@
     line-height: 24px;
   }
 }
+
 .games__link {
   grid-column: 1/-1;
   display: flex;
@@ -87,7 +89,7 @@
   }
 
   &:active {
-    color: transparentize($light-text-color, $amount: 0.7);
+    color: color.adjust($light-text-color, $alpha: 0.7);
   }
 
   &:disabled,

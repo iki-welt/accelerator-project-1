@@ -46,6 +46,7 @@
 
   @include list-default;
   @include font-set(16px, 16px, 400);
+
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {

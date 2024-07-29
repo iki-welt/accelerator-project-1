@@ -34,6 +34,7 @@
 
 .product-card__title {
   margin: 0;
+
   @include font-set(22px, 22px, 700);
 
   @media (min-width: $tablet-width) {
@@ -93,7 +94,7 @@
     width: 24px;
     height: 33px;
     margin-left: 10px;
-    background-image: url(/__spritemap#sprite-ruble-view);
+    background-image: url("/__spritemap#sprite-ruble-view");
     background-size: 24px 100%;
   }
 }
@@ -126,7 +127,7 @@
   }
 
   &:active {
-    color: transparentize($light-text-color, $amount: 0.7);
+    color: color.adjust($light-text-color, $alpha: 0.7);
   }
 
   &:disabled,

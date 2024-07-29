@@ -18,7 +18,7 @@
   @include link-default;
 
   &:hover {
-    color: transparentize($border-button-second-dark, 0.5);
+    color: color.adjust($border-button-second-dark, $alpha: 0.5);
   }
 
   &:focus {
