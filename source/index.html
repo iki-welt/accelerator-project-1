@@ -102,8 +102,8 @@
               height="170" alt="Видеообзор тренажёрного зала 'supergym'.">
           </picture>
           <button class="about__video-play" type="button">
-            <div class="about__video-play-border">
-            </div>
+            <span class="about__video-play-border">
+            </span>
           </button>
           <iframe class="about__video" width="560" height="315"
             src="https://www.youtube.com/embed/9TZXsZItgdw?si=YlPaJaoGPCB7ScWZ" title="YouTube video player" loading="lazy"
@@ -449,19 +449,21 @@
             </div>
           </li>
 
-          <div class="offer__wrapper">
-            <li class="offers__item offer">
-              <h3>Месяц бесплатно</h3>
-              <p>Приведи друга, получи абонемент в подарок</p>
-              <a class="offer__link" href="404.html">подробнее</a>
-            </li>
+          <li class="offer__wrapper">
+            <ul class="offer__subwrapper">
+              <li class="offers__item offer">
+                <h3>Месяц бесплатно</h3>
+                <p>Приведи друга, получи абонемент в подарок</p>
+                <a class="offer__link" href="404.html">подробнее</a>
+              </li>
 
-            <li class="offers__item offer">
-              <h3>Скидка 20%</h3>
-              <p>Корпоративный фитнес с командой</p>
-              <a class="offer__link" href="404.html">подробнее</a>
-            </li>
-          </div>
+              <li class="offers__item offer">
+                <h3>Скидка 20%</h3>
+                <p>Корпоративный фитнес с командой</p>
+                <a class="offer__link" href="404.html">подробнее</a>
+              </li>
+            </ul>
+          </li>
 
         </ul>
       </div>
@@ -491,7 +493,7 @@
             <details class="question__wrapper" open>
               <summary tabindex="-1">
                 <span>Как стать членом фитнес&#8209;центра?</span>
-                <div tabindex="1"></div>
+                <span tabindex="1"></span>
               </summary>
               <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и
                 подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт
@@ -503,7 +505,7 @@
             <details class="question__wrapper">
               <summary tabindex="-1">
                 <span>Где можно посмотреть расписание?</span>
-                <div tabindex="1"></div>
+                <span tabindex="1"></span>
               </summary>
               <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном
                 сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на
@@ -515,7 +517,7 @@
             <details class="question__wrapper">
               <summary tabindex="-1">
                 <span>Есть кулеры в центре? Предоставляются полотенца?</span>
-                <div tabindex="1"></div>
+                <span tabindex="1"></span>
               </summary>
               <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и
                 подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт
@@ -527,7 +529,7 @@
             <details class="question__wrapper">
               <summary tabindex="-1">
                 <span>Сколько тренеров работает в клубе и какова их квалификация?</span>
-                <div tabindex="1"></div>
+                <span tabindex="1"></span>
               </summary>
               <p>На каждом направлении работает не менее 5 высококвалифицированных тренеров со стажем работы не менее 3 лет.</p>
             </details>
@@ -630,37 +632,41 @@
         <section class="contacts">
           <div class="contacts__container container">
             <h2 class="contacts__title primary-title">Контакты</h2>
-            <dl class="contacts__list">
+            <ul class="contacts__list">
 
-              <div class="contacts__list contacts__list--left-column">
-                <div class="contacts__item contact">
-                  <dt class="contact__name">Адрес:</dt>
-                  <dd class="contact__value">г. Омск, ул. 60 лет Октября, 7</dd>
-                </div>
+              <li class="contacts__sublist">
+                <dl class="contacts__list contacts__list--left-column">
+                  <div class="contacts__item contact">
+                    <dt class="contact__name">Адрес:</dt>
+                    <dd class="contact__value">г. Омск, ул. 60 лет Октября, 7</dd>
+                  </div>
 
-                <div class="contacts__item contact">
-                  <dt class="contact__name">График работы:</dt>
-                  <dd class="contact__value">Пн-Вс: с 8:00 до 22:00</dd>
-                </div>
-              </div>
+                  <div class="contacts__item contact">
+                    <dt class="contact__name">График работы:</dt>
+                    <dd class="contact__value">Пн-Вс: с 8:00 до 22:00</dd>
+                  </div>
+                </dl>
+              </li>
 
-              <div class="contacts__list contacts__list--right-column">
-                <div class="contacts__item contact">
-                  <dt class="contact__name">Телефон:</dt>
-                  <dd class="contact__value">
-                    <a class="contact__link" href="tel:88005555555">8 800 555-55-55</a>
-                  </dd>
-                </div>
+              <li class="contacts__sublist">
+                <dl class="contacts__list contacts__list--right-column">
+                  <div class="contacts__item contact">
+                    <dt class="contact__name">Телефон:</dt>
+                    <dd class="contact__value">
+                      <a class="contact__link" href="tel:88005555555">8 800 555-55-55</a>
+                    </dd>
+                  </div>
 
-                <div class="contacts__item contact">
-                  <dt class="contact__name">Email:</dt>
-                  <dd class="contact__value">
-                    <a class="contact__link" href="mail-to:oмск@supergym.ru">oмск@supergym.ru</a>
-                  </dd>
-                </div>
-              </div>
+                  <div class="contacts__item contact">
+                    <dt class="contact__name">Email:</dt>
+                    <dd class="contact__value">
+                      <a class="contact__link" href="mail-to:oмск@supergym.ru">oмск@supergym.ru</a>
+                    </dd>
+                  </div>
+                </dl>
+              </li>
 
-            </dl>
+            </ul>
           </div>
         </section>
       </div>

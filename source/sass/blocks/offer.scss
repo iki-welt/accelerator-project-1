@@ -42,10 +42,17 @@
 }
 
 .offer__wrapper {
+  @include list-default;
+
+  @media (min-width: $desktop-width) {
+    align-self: end;
+  }
+}
+
+.offer__subwrapper {
   display: grid;
   gap: 30px;
-
-  @include list-default;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     grid-column: span 2;

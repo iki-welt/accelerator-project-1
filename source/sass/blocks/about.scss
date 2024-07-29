@@ -172,6 +172,7 @@
   }
 
   &:hover .about__video-play-border {
+    display: block;
     background-color: $border-button-light;
     background-image: unset;
 
