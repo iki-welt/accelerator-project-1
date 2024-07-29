@@ -24,6 +24,10 @@
     line-height: 22px;
   }
 
+  &::placeholder {
+    opacity: 0;
+  }
+
   &:invalid {
     border-color: #ff121f;
   }
