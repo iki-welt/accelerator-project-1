@@ -102,6 +102,7 @@
 .question__wrapper p {
   width: 238px;
   margin: 0;
+  // для анимации плавного выпадания
   margin-top: -20px;
 
   @include font-set(16px, 20px, 300);
@@ -121,7 +122,7 @@
 }
 
 .question__wrapper[open] summary {
-  // для анимации плавного выпадания - отступ + высота строки
+  // для анимации плавного выпадания - отступ по макету + высота строки
   margin-bottom: calc(20px + 20px);
 
   @media (min-width: $tablet-width) {
