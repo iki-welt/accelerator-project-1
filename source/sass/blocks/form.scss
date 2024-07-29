@@ -6,7 +6,7 @@
   background-color: $base-dark-bg;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
+    padding-top: 61px;
     padding-bottom: 60px;
   }
 }
@@ -16,6 +16,7 @@
   gap: 37px;
 
   @media (min-width: $tablet-width) {
+    gap: 35px;
     padding-left: 164px;
     padding-right: 164px;
   }
@@ -30,6 +31,8 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
     text-align: center;
   }
 
@@ -41,6 +44,10 @@
 .form__fields {
   display: grid;
   gap: 36px;
+
+  @media (min-width: $tablet-width) {
+    gap: 35px;
+  }
 }
 
 .form__list {
@@ -68,7 +75,7 @@
   @include font-set(12px, 12px, 700);
 
   @media (min-width: $tablet-width) {
-    padding: 27px;
+    padding: 25px;
   }
 
   &:hover,

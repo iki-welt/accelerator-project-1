@@ -3,13 +3,13 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 100px;
+    padding-top: 61px;
     padding-bottom: 100px;
 
     background-image: url("../../img/bg-price-img-tablet-x1.png");
     background-size: 325px 388px;
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: right bottom 43px;
 
     @supports (background-image: url("../../img/bg-price-img-tablet-x1.webp")) {
       background-image: url("../../img/bg-price-img-tablet-x1.webp");
@@ -48,7 +48,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
 }
 
@@ -74,12 +74,12 @@
 
   @media (min-width: $tablet-width) {
     justify-content: center;
-    column-gap: 50px;
+    column-gap: 44px;
     width: fit-content;
     font-size: 18px;
     line-height: 18px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 
     &::after {
       width: calc(100% - 50px);
@@ -100,6 +100,10 @@
   border: none;
   border-bottom: 2px solid transparent;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+  }
 
   &:hover {
     color: color.adjust($dark-text-color, $alpha: 0.7);

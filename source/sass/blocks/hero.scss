@@ -43,6 +43,10 @@
 .hero__main-content {
   text-align: end;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: 52px;
   }
@@ -64,8 +68,8 @@
   @media (min-width: $tablet-width) {
     margin-top: 10px;
     font-size: 72px;
-    line-height: 85px;
-    letter-spacing: 2%;
+    line-height: 84px;
+    letter-spacing: 2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,6 +96,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     align-self: start;
+    padding: 20px;
   }
 
   @media (min-width: $desktop-width) {

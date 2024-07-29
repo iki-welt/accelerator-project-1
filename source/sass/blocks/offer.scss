@@ -30,6 +30,7 @@
       grid-column: span 2;
       display: grid;
       grid-template-columns: 278px 1fr;
+      gap: 0;
       margin: 0;
     }
   }
@@ -54,7 +55,7 @@
     grid-template-rows: auto auto 1fr;
     justify-items: start;
     gap: 40px;
-    padding: 40px 25px;
+    padding: 40px 25px 45px;
     text-align: start;
   }
 
@@ -69,11 +70,6 @@
   @include font-set(22px, 22px, 700);
 
   @media (min-width: $tablet-width) {
-    font-size: 24px;
-    line-height: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
     font-size: 26px;
     line-height: 26px;
   }
