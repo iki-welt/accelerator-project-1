@@ -33,6 +33,10 @@
     font-size: 54px;
     line-height: 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .juri__slider {
@@ -110,6 +114,18 @@
     &:active {
       color: $light-icon-color;
       background-color: $base-dark-bg;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 48%;
+
+    &--prev {
+      left: -15px;
+    }
+
+    &--next {
+      right: -16px;
     }
   }
 }

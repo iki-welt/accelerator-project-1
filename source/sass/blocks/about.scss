@@ -57,6 +57,7 @@
 
     &:last-of-type {
       display: block;
+      margin-top: 8px;
     }
   }
 }
@@ -74,7 +75,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 }
 

@@ -115,6 +115,10 @@
     padding: 27px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 25px;
+  }
+
   &:hover,
   &:focus,
   &:active {

@@ -13,6 +13,10 @@
     align-self: start;
     text-align: start;
 
+    &--alt-colored {
+      grid-column: 1/-1;
+    }
+
     &--dt-toplined {
       margin-top: -1px;
     }
@@ -36,6 +40,11 @@
       border-top: 2px solid $feature-separator;
       padding-bottom: 0;
       padding-top: 40px;
+    }
+
+    &:nth-of-type(2),
+    &:nth-of-type(5) {
+      column-gap: 76px;
     }
   }
 }
@@ -63,7 +72,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    grid-column: 1/-1;
     display: flex;
     gap: 25px;
     width: 320px;
@@ -75,6 +83,13 @@
     &::before {
       content: unset;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 30px;
+    width: 363px;
+    padding: 55px 34px 57px;
+
   }
 }
 

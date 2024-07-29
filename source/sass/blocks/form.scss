@@ -23,7 +23,8 @@
 
   @media (min-width: $desktop-width) {
     width: unset;
-    padding: 0 103px;
+    padding: 0;
+    padding-right: 103px;
   }
 }
 

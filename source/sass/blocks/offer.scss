@@ -36,8 +36,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 21px 20px 25px;
+    gap: 15px;
+
     &--main-offer {
+      padding: 0;
       grid-column: unset;
+      gap: 2px;
     }
   }
 }
@@ -60,7 +65,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px 45px;
+    padding: 40px 45px 45px;
   }
 }
 
