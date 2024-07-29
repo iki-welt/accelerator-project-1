@@ -1,5 +1,5 @@
 .faq {
-  padding-top: 70px;
+  padding-top: 71px;
   padding-bottom: 70px;
 
   @media (min-width: $tablet-width) {
@@ -23,7 +23,7 @@
 
 .faq__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   text-align: center;
 
@@ -47,7 +47,7 @@
   @include list-default;
   @include font-set(16px, 16px, 400);
 
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(4, 1fr);
@@ -65,7 +65,7 @@
 
 .faq__theme-button {
   width: 100%;
-  padding: 14px;
+  padding: 13px;
   background-color: transparent;
   border: 1px solid $faq-tabs;
   cursor: pointer;

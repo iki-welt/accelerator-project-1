@@ -1,5 +1,5 @@
 .form {
-  padding-top: 70px;
+  padding-top: 71px;
   padding-bottom: 70px;
 
   color: $light-text-color;
@@ -13,7 +13,7 @@
 
 .form__container {
   display: grid;
-  gap: 36px;
+  gap: 37px;
 
   @media (min-width: $tablet-width) {
     padding-left: 164px;
@@ -45,7 +45,7 @@
 
 .form__list {
   display: grid;
-  gap: 36px;
+  gap: 38px;
 
   @include list-default;
 
@@ -60,6 +60,7 @@
   padding: 22px;
 
   color: inherit;
+  text-transform: uppercase;
   background-color: transparent;
   border: 2px solid $border-button-light;
   cursor: pointer;

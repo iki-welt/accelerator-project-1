@@ -1,7 +1,7 @@
 .timings-list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 3px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -15,6 +15,7 @@
 
 // .timings-list__item {}
 .timings-list__item-name {
+  padding-bottom: 2px;
   border-bottom: 1px solid $base-light-color;
 
   @include font-set(16px, 20px, 300);
@@ -29,6 +30,7 @@
   display: flex;
   align-items: center;
   margin: 0;
+  padding-top: 1px;
 
   @include font-set(24px, 24px, 700);
 
